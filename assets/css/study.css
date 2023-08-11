@@ -86,6 +86,38 @@
     overflow-y: scroll;
 }
 
+/* review section  */
+.review-section{
+    z-index: 2;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--beetle);
+    transform: translateY(100%);
+}
+
+/* discussino section  */
+.discussion-section{
+    z-index: 3;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    transform: translateY(100%);
+}
+
+/* certification section  */
+.certification-section{
+    z-index: 4;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: yellowgreen;
+    transform: translateY(100%);
+}
 
 @media screen and (max-width: 768px){
     .aside{
