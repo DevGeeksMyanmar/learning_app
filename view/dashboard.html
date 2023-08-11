@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <!-- bootstrap cdn link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- fontawesome cdn js  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- this is css link  -->
     <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />   
 </head>
 <body>
     
@@ -19,16 +21,87 @@
         <div class="row">
 
             <!-- this is aside bar  -->
-            <div class="col-12 col-md-2 aside"></div>
+            <div class="col-12 col-md-2 aside order-1 order-md-0"></div>
             <!-- end of aside bar  -->
 
             <!-- this is main section  -->
-            <div class="col-12 col-md-10 main-section"></div>
+            <div class="col-12 col-md-10 main-section px-4 py-2 order-0 order-md-1">
+                
+                <!-- this is navbar  -->
+                <div class="row">
+                    <!-- this is profile  -->
+                    <div class="col-6 profile"></div>
+                    <!-- this is search bar  -->
+                    <div class="col-6 search-bar"></div>
+                </div>
+                <!-- this is end of navbar  -->
+
+                <!-- this is category section  -->
+                <div class="row">
+                    <div class="col-12 categroy-section"></div>
+                </div>
+                <!-- this is end of category section  -->
+
+                <!-- this is popular course  -->
+                <div class="row">
+                    <div class="col-12 popular-course p-2">
+
+                        <!-- swiper goes here  -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">Slide 1</div>
+                              <div class="swiper-slide">Slide 2</div>
+                              <div class="swiper-slide">Slide 3</div>
+                              <div class="swiper-slide">Slide 4</div>
+                              <div class="swiper-slide">Slide 5</div>
+                              <div class="swiper-slide">Slide 6</div>
+                              <div class="swiper-slide">Slide 7</div>
+                              <div class="swiper-slide">Slide 8</div>
+                              <div class="swiper-slide">Slide 9</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- this is end of poupular course  -->
+
+                <!-- this is latest coures  -->
+                <div class="row">
+                    <div class="col-12 latest-course">
+
+                        <!-- course card will go here  -->
+
+
+
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+
+                    </div>
+                </div>
+                <!-- this is end of latest course  -->
+                
+            </div>
             <!-- this is end of main section  -->
 
         </div>
     </div>
     <!-- end of container  -->
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
+    </script>
 </body>
 </html>
