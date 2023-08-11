@@ -62,4 +62,67 @@
 .main-section{
     height: 100vh;
     background-color: yellow;
+    overflow-y: scroll;
+}
+
+/* profile  */
+.profile{
+    height: 10vh;
+    background-color: #2b70c9;
+}
+
+/* search bar  */
+.search-bar{
+    height: 10vh;
+    background-color: #0c4a9b;
+}
+
+/* category section  */
+.categroy-section{
+    height: 10vh;
+    background-color: #4b4b4b;
+}
+
+/* popular course  */
+.popular-course{
+    height: 50vh;
+    background-color: #ff4b4b;
+}
+
+/* latest course  */
+.latest-course{
+    height: 80vh;
+    background-color: #ff9600;
+}
+
+/* this is swiper section  */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+@media screen and (max-width: 768px){
+    .aside{
+        height: 10vh;
+    }
+    .main-section{
+        height: 90vh;
+    }
 }
