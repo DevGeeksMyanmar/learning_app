@@ -23,6 +23,7 @@
     --font-open-sans: 'Open Sans', sans-serif;
 
     /* font size  */
+    --fs-12: 12px;
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-18: 18px;
@@ -187,13 +188,110 @@
 /* category section  */
 .categroy-section{
     height: 10vh;
-    background-color: #4b4b4b;
+    background-color: transparent;
+    border-bottom: 1px solid var(--swan);
+}
+
+.categroy-section h4{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
+
+.categroy-section .category-link{
+    width: auto !important;
+    height: 40px !important;
+    background: var(--swan);
+    padding: 9px 15px;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+    color: var(--wolf);
+    border-radius: 20px;
+    transition:  all .2s ease-in;
+}
+
+.categroy-section .category-link:hover{
+    background: var(--wolf) !important;
+    color: var(--polar) !important;
+    /* transform: scale(1.2); */
+}
+
+
+.category-section .my-swiper2{
+    overflow-x: scroll;
+    width: 1000px;
+    height: auto;
 }
 
 /* popular course  */
 .popular-course{
     height: 50vh;
-    background-color: #ff4b4b;
+    background-color: transparent;
+}
+
+.popular-course h4{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
+
+.popular-course span{
+    font-size: var(--fs-14);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.p-card{
+    text-decoration: none;
+    width: 360px !important;
+    height: 260px !important;
+    border-radius: 10px;
+    border: 1px solid #AFAFAF;
+    background: #FFF;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.p-card:hover{
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.42);
+}
+
+.p-card .card-img{
+    width: 340px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(175, 175, 175, 0.50);
+}
+
+.p-card .card-content .content h5{
+    padding-top: 10px;
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+    text-decoration: none;
+    font-size: var(--fs-16);
+}
+
+.p-card .card-content .content span{
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+    font-size: var(--fs-14);
+}
+
+.p-card .card-content .price span{
+    font-weight: var(--fw-bold);
+    color: var(--humpback) !important;
+    font-size: 14px;
+}
+
+.p-card .badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    background-color: var(--swan);
+    padding: 10px 10px;
 }
 
 /* latest course  */
@@ -211,7 +309,7 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
