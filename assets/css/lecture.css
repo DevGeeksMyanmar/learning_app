@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+:root{
+    /* primary  */
+    --macaw: #1cb0f6;
+    --humpback: #2b70c9;
+    --beetle: #ce82ff;
+    --bee: #ffc800;
+    --fox: #ff9600;
+    --cardinal: #ff4b4b;
+    --light-hover: rgba(74, 135, 206, 0.20);
+
+    /* neutrals  */
+    --eel: #4b4b4b;
+    --wolf: #777;
+    --hare: #afafaf;
+    --swan: #e5e5e5;
+    --polar: #f7f7f7;
+    --snow: #fff;
+
+    --font-open-sans: 'Open Sans', sans-serif;
+
+    /* font size  */
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    
+    /* font weight  */
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
+}
+/* for universal  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-open-sans);
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/* dashboard aside  */
+.aside{
+    height: 100vh;
+    /* background-color: red; */
+    border: 1px solid var(--hare);
+}
+
+.nav-link{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight: var(--fw-semibold);
+    border-radius: 10px;
+}
+
+.nav-link:hover{
+    background-color: var(--light-hover);
+}
+
+.nav-link.active{
+    background-color: var(--light-hover);
+    color: var(--humpback);
+    font-weight: var(--fw-bold);
+}
+
+.btn-back{
+    position: absolute;
+    bottom: 0;
+    padding: 8px 25px;
+    width: 100px;
+    border: var(--eel) 1px solid ;
+    border-radius: 10px;
+    font-weight: var(--fw-medium);
+    /* background-color: var(--fox); */
+    color: var(--eel);
+}
+
+.btn-back:hover{
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
