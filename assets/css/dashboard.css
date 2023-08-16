@@ -23,6 +23,7 @@
     --font-open-sans: 'Open Sans', sans-serif;
 
     /* font size  */
+    --fs-10: 10px;
     --fs-12: 12px;
     --fs-14: 14px;
     --fs-16: 16px;
@@ -316,6 +317,22 @@
 
 .latest-course .p-card:hover{
     transform: scale(1.03);
+}
+
+.p-card .latest-badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: auto;
+    background-color: var(--polar);
+    padding: 10px 10px;
+    color: var(--humpback);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: var(--fs-12);
+    font-weight: var(--fw-bold);
+    border: 1px solid var(--swan);
+    box-shadow: var(--);
 }
 
 /* this is swiper section  */
