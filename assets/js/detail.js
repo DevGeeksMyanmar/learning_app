@@ -19,7 +19,7 @@ let course_detail = [
             "Use selected parts of the vast Java SE class library to enhance your java programming technique"
         ],
         "modules": [
-            "Introduction to Java Programming",
+            "Introduction to Java Programming", // week 1
             "Java Languages Fundamental - Types",
             "Java Languages Fundamental - Flows of Control",
             "Classes and Objects",
@@ -42,7 +42,7 @@ let course_detail = [
         "id": 2,
         "course_name": "Python Course",
         "course_label": "Crash Course on Python",
-        "course_image": "../assets/pic/Java-BCG-Banner.png",
+        "course_image": "../assets/pic/FREE-Python-Course-For-Beginners.png",
         "prices": 199.0,
         "descp": `
                 This course is designed to teach you 
@@ -182,10 +182,10 @@ let course_detail = [
 
     // web development course details
     {
-        "id": 5.0,
+        "id": 5,
         "course_name": "Web Development",
         "course_label": "HTML, CSS, and Javascript for Web Developers",
-        "course_image": "../assets/pic/Java-BCG-Banner.png",
+        "course_image": "../assets/pic/BCG-Web-Development-NEW-Banner.png",
         "prices": 199,
         "descp": `
             we will learn the basic tools that every web page coder
@@ -219,15 +219,16 @@ const course_detail_container = document.querySelector(".course-details");
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const id = urlParams.get('id');
-
+let idd = urlParams.get('idd');
+let id = parseInt(idd);
+id -= 1
 console.log('Received ID:', id);
 
 course_detail_container.innerHTML = `
 <!-- course details  -->
             <div class="col-12 image-wrap p-3 border-bottom">
                 <!-- image  -->
-                <div class="img" style="background: url(${course_detail[id].image});
+                <div class="img" style="background: url(${course_detail[id].course_image});
                                         background-position: center;
                                         background-size: cover;
                                         background-repeat: no-repeat;"></div>
@@ -238,7 +239,7 @@ course_detail_container.innerHTML = `
 
                 <div class="row d-flex align-items-start justify-content-center  course-content-details">
                     <div class="col-6 d-flex flex-column justify-content-start title">
-                        <h4>${course_detail[id].name}</h4>
+                        <h4>${course_detail[id].course_name}</h4>
                         <span>Complete Java Full Course</span>
                     </div>
                     <div class="col-6 d-flex flex-column justify-content-end align-items-end price">
@@ -390,3 +391,4 @@ course_detail_container.innerHTML = `
             </div>
 `;
 
+id = 0
