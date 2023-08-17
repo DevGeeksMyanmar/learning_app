@@ -26,7 +26,7 @@ const uplode_pp_course = (items) => {
                         <span>${e.short_desc}</span>
                     </div>
                     <div class="price">
-                        <span>$${e.price}.0</span>
+                        <span>$${e.price}</span>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@ const upload_latest_course = (items) => {
                         <span>${e.short_desc}</span>
                     </div>
                 <div class="price">
-                    <span>$${e.price}.0</span>
+                    <span>$${e.price}</span>
                 </div>
             </div>
 
