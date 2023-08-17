@@ -217,6 +217,7 @@ let course_detail = [
 
 const course_detail_container = document.querySelector(".course-details");
 
+// get the idd from url
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 let idd = urlParams.get('idd');
@@ -225,7 +226,7 @@ id -= 1
 console.log('Received ID:', id);
 
 course_detail_container.innerHTML = `
-<!-- course details  -->
+            <!-- course details  -->
             <div class="col-12 image-wrap p-3 border-bottom">
                 <!-- image  -->
                 <div class="img" style="background: url(${course_detail[id].course_image});
@@ -240,10 +241,10 @@ course_detail_container.innerHTML = `
                 <div class="row d-flex align-items-start justify-content-center  course-content-details">
                     <div class="col-6 d-flex flex-column justify-content-start title">
                         <h4>${course_detail[id].course_name}</h4>
-                        <span>Complete Java Full Course</span>
+                        <span>${course_detail[id].course_label}</span>
                     </div>
                     <div class="col-6 d-flex flex-column justify-content-end align-items-end price">
-                        <h5>Price: <span>89.0</span></h5>
+                        <h5>Price: <span>${course_detail[id].prices}</span></h5>
                     </div>
                 </div>
 
@@ -253,9 +254,7 @@ course_detail_container.innerHTML = `
                     <div class="col-12">
                         <h4>Description</h4>
                         <p>
-                            Learn the Skills Needed to be a Java Programmer.
-                            Quickly master the Java programming language and
-                            the packages that constitute its rich set of core libraries.
+                            ${course_detail[id].descp}
                         </p>
                     </div>
                 </div>
@@ -265,34 +264,9 @@ course_detail_container.innerHTML = `
                 <div class="row d-flex align-items-start course-content-what">
                     <div class="col-12">
                         <h4 class="mb-3">What will you learn?</h4>
+                        <div class="what-will-we-learn">
                         
-                        <div class="row mb-2">
-                            <div class="col-1 check-icon"><i class="fa-solid fa-check"></i></div>
-                            <div class="col-11 what-will-learn">
-                                <span>Learn the basic syntax and functions of the Java programming language</span>
-                            </div>
                         </div>
-                        <div class="row mb-2">
-                            <div class="col-1 check-icon"><i class="fa-solid fa-check"></i></div>
-                            <div class="col-11 what-will-learn">
-                                <span>Apply object-oriented programming techniques to building classes,
-                                    creating objects, and understanding how solutions are packaged in Java.</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 check-icon"><i class="fa-solid fa-check"></i></div>
-                            <div class="col-11 what-will-learn">
-                                <span>Learn how to implement inheritance and polymorphism in Java.</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 check-icon"><i class="fa-solid fa-check"></i></div>
-                            <div class="col-11 what-will-learn">
-                                <span>Use selected parts of the vast Java SE class library to enhance
-                                    your Java programming techniques.</span>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -322,46 +296,9 @@ course_detail_container.innerHTML = `
                     <div class="col-12">
                         <h4 class="mb-4">Modules in this course!</h4>
                         
-                        <div class="row mb-2 course-modules-wrapper">
-                            <div class="col-1 list-number">
-                                <span class="me-2">1</span>
-                            </div>
-                            <div class="col-11 what-will-learn2">
-                                <span>Introduction to Java Programming</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2 course-modules-wrapper">
-                            <div class="col-1 list-number">
-                                <span class="me-2">2</span>
-                            </div>
-                            <div class="col-11 what-will-learn2">
-                                <span>Java Languages Fundamental - Types</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2 course-modules-wrapper">
-                            <div class="col-1 list-number">
-                                <span class="me-2">3</span>
-                            </div>
-                            <div class="col-11 what-will-learn2">
-                                <span>Java Languages Fundamental - Flows of Control</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2 course-modules-wrapper">
-                            <div class="col-1 list-number">
-                                <span class="me-2">4</span>
-                            </div>
-                            <div class="col-11 what-will-learn2">
-                                <span>Classes and Objects</span>
-                            </div>
-                        </div>
-                        <div class="row mb-2 course-modules-wrapper">
-                            <div class="col-1 list-number">
-                                <span class="me-2">5</span>
-                            </div>
-                            <div class="col-11 what-will-learn2">
-                                <span>Creating Classes, Objects and using it</span>
-                            </div>
-                        </div>
+                        <div class="course-models-wrapper-container"></div>
+                        
+                    
                     </div>
                 </div>
 
@@ -382,7 +319,7 @@ course_detail_container.innerHTML = `
                 </div>
                 <div class="mb-3"></div>
 
-                <button class="enroll me-3">Enroll Now</button>
+                <a href="./payment.html?id=${id+1}" class="enroll me-3">Enroll Now</a>
                 <button class="back">Back</button>
 
                 <div class="mb-5"></div>
@@ -391,4 +328,45 @@ course_detail_container.innerHTML = `
             </div>
 `;
 
+
+// print out the what we learn topic
+const what_will_we_learn = document.querySelector(".what-will-we-learn");
+let what_will_learn = course_detail[id].learn;
+for(let j=0; j<what_will_learn.length; j++)
+{
+    what_will_we_learn.innerHTML +=
+        `
+        <div class="row mb-2">
+            <div class="col-1 check-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="col-11 what-will-learn">
+                <span>${course_detail[id].learn[j]}</span>
+            </div>
+        </div>
+        `;
+}
+
+// print out the modules of coures
+const modules_of_course = document.querySelector(".course-models-wrapper-container");
+let modules_course = course_detail[id].modules;
+let count = 0;
+for(let j=0; j<modules_course.length; j++){
+    modules_of_course.innerHTML += `
+    <div class="row mb-2 course-modules-wrapper">
+        <div class="col-1 list-number">
+            <span class="me-2">${count++}</span>
+        </div>
+        <div class="col-11 what-will-learn2">
+            <span>${course_detail[id].modules[j]}</span>
+        </div>
+    </div>
+    `;
+}
+
+// back button function
+const backBtn = document.querySelector(".back");
+backBtn.addEventListener("click", () => {
+    window.location = "./dashboard.html";
+})
+
+// set id to 0
 id = 0
