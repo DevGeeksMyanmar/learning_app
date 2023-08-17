@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
+        <title>Lecture</title>
         <!-- bootstrap cdn link  -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <!-- fontawesome cdn js  -->
@@ -23,21 +23,27 @@
                 <!-- aside nav link  -->
                 <div class="row d-flex flex-row flex-md-column align-items-center justify-content-center">
                     <div class="col-3 col-md-12 mb-md-2 me-2 me-md-0 mt-5">
-                        <div  class="nav-link explore active px-5">
-                            <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/globe-americas.svg" alt="">
-                            <span class="d-none d-md-block">Explore</span>
+                        <div  class="nav-link explore active px-3">
+                            <!-- <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/globe-americas.svg" alt=""> -->
+                            <span class="d-none d-md-block">Current Video</span>
                         </div>
                     </div> 
                     <div class="col-3 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link recent px-5">
-                            <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/arrow-repeat.svg" alt="">
-                            <span class="d-none d-md-block">Recent</span>
+                        <div  class="nav-link recent px-3">
+                            <!-- <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/arrow-repeat.svg" alt=""> -->
+                            <span class="d-none d-md-block">Discussion</span>
                         </div>
                     </div>
                     <div class="col-3 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link profile px-5">
-                            <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/person-circle.svg" alt="">
-                            <span class="d-none d-md-block">Profile</span>
+                        <div  class="nav-link profile px-3">
+                            <!-- <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/person-circle.svg" alt=""> -->
+                            <span class="d-none d-md-block">Review</span>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-12 mb-md-2 me-2 me-md-0">
+                        <div  class="nav-link profile px-3">
+                            <!-- <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/person-circle.svg" alt=""> -->
+                            <span class="d-none d-md-block">Certificatioin</span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +61,50 @@
 
             </div>
             <!-- end of aside bar  -->
+            <div class="col-12 col-md-10 main-section px-4 py-2 order-0 order-md-1">
+                <!--video section-->
+                <div class="video">
+                    
+                </div>
+                <!--video section end-->
+
+                <!--week-->
+                <div class="swiper mySwiper2 mt-1">
+                    <div class="swiper-wrapper">
+                        <button class="category active">Week 1</button>
+                        <button class="category ">Week 2</button>
+                        <button class="category ">Week 3</button>
+                        <button class="category ">Week 4</button>
+                        <button class="category ">Week 5</button>
+                        
+                    </div>
+                </div>
+                <!--week end-->
+
+                <!--lecture lession start-->
+                <div class="content active">
+                    <h5 class="mt-4">Week 1</h5>
+                    
+                </div>
+                <div class="content ">
+                    <h5 class="mt-4">Week 2</h5>
+                </div>
+                <div class="content ">
+                    <h5 class="mt-4">Week 3</h5>
+                </div>
+                <div class="content ">
+                    <h5 class="mt-4">Week 4</h5>
+                </div>
+                <div class="content ">
+                    <h5 class="mt-4">Week 5</h5>
+                </div>
+            </div>
+            
+    
+            
         </div>
-    </div>
+        
+    </div> 
 </body>
+<script src="../assets/js/lecture.js"></script>
 </html>
