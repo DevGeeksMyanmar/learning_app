@@ -28,7 +28,7 @@ const card = document.querySelectorAll(".card-img");
 const uplode_pp_course = (items) => {
     const pp_courses = items.map(e => {
         return `
-            <div class="p-card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+            <a href="./detail.html?idd=${e.id}" class="p-card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
                 <div class="card-img mb-2" 
                 style="background: url(${e.image});
                 background-position: center;
@@ -47,46 +47,13 @@ const uplode_pp_course = (items) => {
 
                 <!-- badge  -->
                 <div class="badge"><img src="../assets/svg/star-solid.svg" alt=""></div>
-            </div>
+            </a>
         `
     })
     .join(" ");
     popular_course_wrapper.innerHTML = pp_courses;
 }
 uplode_pp_course(courses);
-
-
-// upload latest course
-// const upload_latest_course = (items) => {
-//     const upload_course = items.map(e => {
-//         return `
-//         <div class="col-12 col-md-6 col-lg-4 mb-4">
-//             <div class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
-//                 <div class="card-img mb-2" 
-//                     style="background: url(${e.image});
-//                     background-position: center;
-//                     background-repeat: no-repeat;
-//                     background-size: cover;"></div>
-//                 <div class="w-100 card-content d-flex align-items-center justify-content-between">
-//                     <div class="content d-flex flex-column align-items-start justify-content-center">
-//                         <h5>${e.name}</h5>
-//                         <span>${e.short_desc}</span>
-//                     </div>
-//                 <div class="price">
-//                     <span>$${e.price}</span>
-//                 </div>
-//             </div>
-
-//             <!-- badge  -->
-//             <div class="latest-badge">Latest</div>
-//         </div>
-//     </div>
-//         `;
-//     })
-//     .join(" ");
-//     latest_course_wrapper.innerHTML = upload_course;
-// }
-// upload_latest_course(l_courses);
 
 for(let i=0; i<l_courses.length; i++){
     const course = `
@@ -127,8 +94,17 @@ nav_links.forEach(e => {
     })
 })
 
-// Assuming latest_course_wrapper is a valid reference to the wrapper element
+// Making the course cards clickable
 latest_course_wrapper.addEventListener('click', (event) => {
+    const clickedElement = event.target.closest('.latest_course_card');
+    
+    if (clickedElement) {
+        // Handle the click event here
+        console.log('Card clicked:', clickedElement.querySelector('h5').textContent);
+    }
+});
+
+popular_course_wrapper.addEventListener('click', (event) => {
     const clickedElement = event.target.closest('.latest_course_card');
     
     if (clickedElement) {
