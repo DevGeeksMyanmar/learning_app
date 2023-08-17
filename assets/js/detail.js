@@ -1,0 +1,1 @@
+import { course_detail } from "./api,js";
