@@ -91,7 +91,7 @@ uplode_pp_course(courses);
 for(let i=0; i<l_courses.length; i++){
     const course = `
     <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="./detail.html?id=${l_courses[i].id}" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+            <a href="./detail.html?idd=${l_courses[i].id}" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
                 <div class="card-img mb-2" 
                     style="background: url(${l_courses[i].image});
                     background-position: center;
