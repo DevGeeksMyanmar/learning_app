@@ -56,7 +56,6 @@
 /* dashboard aside  */
 .aside{
     height: 100vh;
-    /* background-color: red; */
     border: 1px solid var(--hare);
 }
 
@@ -68,27 +67,23 @@
     justify-content: start;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    font-size: var(--fs-14);
     font-weight: var(--fw-semibold);
-    border-radius: 10px;
+    color: var(--eel);
 }
 
 .nav-link:hover{
-    background-color: var(--light-hover);
-}
-
-.nav-link.active{
-    background-color: var(--light-hover);
-    color: var(--humpback);
-    font-weight: var(--fw-bold);
+    color: blue;    
 }
 
 .btn-back{
     position: absolute;
     bottom: 0;
     padding: 8px 25px;
-    width: 100px;
+    width: 80px;
     border: var(--eel) 1px solid ;
     border-radius: 10px;
+    font-size: var(--fs-12);
     font-weight: var(--fw-medium);
     /* background-color: var(--fox); */
     color: var(--eel);
@@ -97,4 +92,52 @@
 .btn-back:hover{
     background-color: rgb(39, 38, 38);
     color: white;
+}
+ .main-section .video{
+    background-color: var(--humpback);
+    border: 1px solid blue;
+    height: 240px;
+    border-radius: 10px;
+
+}
+.main-section{
+    border: 1px solid red;
+}
+.category{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 100px !important;
+    height: 40px !important;
+    background: var(--swan);
+    padding: 9px 23px;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+    color: var(--wolf);
+    border-radius: 10px;
+    transition:  all .2s ease-in;
+}
+.category:hover{
+    background: var(--wolf) !important;
+    color: var(--polar) !important;   
+}
+.category.active{
+    background: var(--wolf) !important;
+    color: var(--polar) !important; 
+}
+.my-swiper2{
+    overflow-x: scroll;
+    width: 1000px;
+    height: auto;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+button{
+    outline:none;
+    background: transparent;
+    border:none;
 }
