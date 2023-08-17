@@ -17,6 +17,7 @@
     --swan: #e5e5e5;
     --polar: #f7f7f7;
     --snow: #fff;
+    --shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 
     /* font family  */
     --font-open-sans: 'Open Sans', sans-serif;
@@ -75,7 +76,8 @@
 .img{
     width: 100%;
     height: 50vh;
-    background-color: blueviolet;
+    border: 1px solid var(--swan);
+    box-shadow: var(--shadow);
 }
 
 /* course-content-wrap  */

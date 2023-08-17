@@ -1,3 +1,7 @@
+
+import { courses } from "./api.js";
+import { l_courses } from "./api.js";
+
 const popular_course_wrapper = document.querySelector('.popular-course-wrapper');
 const latest_course_wrapper = document.querySelector(".latest-course-wrapper");
 const nav_links = document.querySelectorAll(".nav-link");
