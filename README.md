@@ -19,19 +19,19 @@
 <hr>
 <h2 style="color: violet;">Project Scope and Objectives<h3>
 
-:pool: <h3>Outline</h3>
+:fire: <h3>Outline</h3>
 
 
-:pool: <h3>Purpose</h3>
+:fire: <h3>Purpose</h3>
 
 
-:pool: <h3>Goals</h3>
+:fire: <h3>Goals</h3>
 
 
-:pool: <h3>Features</h3>
+:fire: <h3>Features</h3>
 
 
-:pool: <h3>Functions</h3>
+:fire: <h3>Functions</h3>
 
 
 
