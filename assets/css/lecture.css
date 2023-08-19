@@ -81,6 +81,12 @@
     color: var(--humpback);    
 }
 
+.nav-link.active{
+    /* background-color: var(--light-hover); */
+    color: var(--humpback);
+    font-weight: var(--fw-bold);
+}
+
 .btn-back{
     position: absolute;
     bottom: 0;
