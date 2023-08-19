@@ -6,7 +6,6 @@ category.forEach((c, index)=>{
     c.addEventListener("click",()=>{
         content.forEach((content)=>{
             content.classList.remove("active");
-            
         });
         category.forEach((category)=>{
             category.classList.remove("active");
