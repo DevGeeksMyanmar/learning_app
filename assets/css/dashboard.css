@@ -51,11 +51,14 @@
     font-family: var(--font-open-sans);
 }
 
+
 .container-fluid{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    /* overflow-x: hidden; */
 }
+
 
 /* dashboard aside  */
 .aside{
@@ -358,6 +361,43 @@
     object-fit: cover;
   }
 
+
+/* recent section  */
+.recent-section, .profile-section{
+    /* z-index: -99; */
+    /* width: 100%; */
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--polar);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: all .8s ease-in-out;
+}
+
+.recent-section.active, .profile-section.active{
+    transform: translateY(0%);
+}
+
+/* progress bar  */
+.myprogressbar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--swan);
+    position: relative;
+    overflow: hidden;
+}
+.myprogressbar::before{
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-color: var(--humpback);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 @media screen and (max-width: 768px){
     .aside{
