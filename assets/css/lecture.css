@@ -159,4 +159,7 @@ button{
     .aside{
         height: 10vh;
     }
+    .star{
+        width: auto;
+    }
 }
