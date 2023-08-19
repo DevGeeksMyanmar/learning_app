@@ -1,1 +1,221 @@
-<!-- this is created by kyaw kyi -->
+<!-- this is created by kyaw kyi --><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign up</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        :root{
+        /* primary  */
+        --macaw: #1cb0f6;
+        --humpback: #2b70c9;
+        --beetle: #ce82ff;
+        --bee: #ffc800;
+        --fox: #ff9600;
+        --cardinal: #ff4b4b;
+        --light-hover: rgba(74, 135, 206, 0.20);
+    
+        /* neutrals  */
+        --eel: #4b4b4b;
+        --wolf: #777;
+        --hare: #afafaf;
+        --swan: #e5e5e5;
+        --polar: #f7f7f7;
+        --snow: #fff;
+    
+        /* font family  */
+        --font-open-sans: 'Open Sans', sans-serif;
+        --shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    
+        /* font size  */
+        --fs-10: 10px;
+        --fs-12: 12px;
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-18: 18px;
+        --fs-24: 24px;
+        --fs-26: 26px;
+        --fs-28: 28px;
+        --fs-32: 32px;
+        --fs-40: 40px;
+    
+        /* font weight  */
+        --fw-bold: 700;
+        --fw-semibold: 600;
+        --fw-medium: 500;
+        --fw-regular: 400;
+        --fw-light: 300;
+    }
+    
+    /* for universal  */
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: var(--font-open-sans);
+    }
+            body{
+                background-color: var(--snow);
+            }
+    
+            .content{
+                background-color: var(--polar);
+                margin: auto;
+                margin-top: 100px;
+                width: 450px;
+                border: 1px solid var(--hare);
+                border-radius: 5px;
+                box-shadow: var(--shadow);
+            }
+    
+            .header{
+                text-align: center;
+                padding-top: 20px;
+                margin-bottom: 20px;
+            }
+    
+            .sign-up{
+                font-size: var(--fs-24);
+                color: var(--humpback);
+                margin-top: 9px;
+                margin-bottom: 7px;
+                font-weight: var(--fw-bold);
+            }
+    
+            .text{
+                font-size: var(--fs-14);
+                margin-top: 4px;
+                margin-bottom: 25px;
+                color: var(--hare);
+            }
+    
+            .input{
+                display: block;
+                margin: auto;
+                margin-bottom: 16px;
+                padding-left: 20px;
+                width: 350px;
+                height: 40px;
+                border: 1px solid var(--hare);
+                border-radius: 5px;
+                outline: none;
+            }
+    
+            .input:focus{
+                outline: 1px solid var(--humpback);
+            }
+    
+            .continue{
+                display: flex;
+                justify-content: end;
+                margin-right: 50px;
+            }
+    
+            .continue button{
+                background-color: var(--humpback);
+                width: 90px;
+                height: 30px;
+                color: var(--polar);
+                font-size: var(--fs-14);
+                border: 1px solid var(--hare);
+                border-radius: 5px;
+            }
+    
+            .continue button:hover{
+                background-color: var(--macaw);
+            }
+    
+            .button-group{
+                display: block;
+                text-align: center;
+            }
+            
+            .or{
+                text-align: center;
+                margin-top: 13px;
+                margin-bottom: 13px;
+            }
+    
+            .social-link{
+                background-color: var(--swan);
+                font-weight: var(--fw-medium);
+                width: 110px;
+                height: 35px;
+                margin-bottom: 18px;
+                border: 1px solid var(--hare);
+                border-radius: 6px;
+            }
+    
+            .social-link:hover{
+                background-color: var(--polar);
+            }
+    
+            .twitter{
+                margin: 0px 15px;
+            }
+    
+            .button-group i{
+                font-size: 18px;
+                margin-right: 6px;
+            }
+    
+            .line{
+                margin: auto;
+                margin-bottom: 22px;
+                width: 60%;
+                height: 1px;
+                background-color: var(--swan);
+            }
+    
+            .footer{
+                font-size: var(--fs-14);
+                font-weight: var(--fw-medium);
+                text-align: center;
+                margin-bottom: 50px;
+            }
+    
+            .login{
+                margin-top: 5px;
+            }
+    
+            .login a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <!-- for header -->
+            <div class="header">
+                <div class="sign-up">Sign Up</div>
+                <div class="text">To continue, please sign up first or login.</div>
+            </div>
+    
+            <div class="input-group">
+                <input type="text" placeholder="Username" class="input">
+                <input type="email" placeholder="Email" class="input">
+                <input type="password" placeholder="Password" class="input">
+            </div>
+    
+            <div  class="continue">
+                <button>Continue</button>
+            </div>
+    
+            <div class="or">or</div>
+    
+            <div class="button-group">
+                <button class="social-link"><i class="fa-brands fa-google"></i>Google</button>
+                <button class="social-link twitter"><i class="fa-brands fa-twitter"></i>Twitter</button>
+                <button class="social-link"><i class="fa-brands fa-instagram"></i>Instagram</button>
+            </div>
+        
+            <div class="line"></div>
+    
+            <div class="footer">
+                <div>Already have an account?</div>
+                <div class="login"><a href="">Login</a></div>
+            </div>
+        </div>
+    </body>
+    </html>

@@ -57,7 +57,7 @@
 /* container row  */
 .container .row{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
 }
 
@@ -86,8 +86,113 @@
     height: auto;
 }
 
+.course-content-details h4{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+}
+
+.course-content-details .title span{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.course-content-details .price h5{
+    font-size: var(--fs-18);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.course-content-details .price span{
+    color: var(--humpback) !important;
+}
+
+.course-content-description h4{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+}
+
+.course-content-description p, .course-content-what .what-will-learn{
+    font-size: var(--fs-18);
+    font-weight: var(--fw-regular);
+    color: var(--wolf);
+}
+
+.course-content-what h4{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+}
+
+.course-content-what .check-icon{
+    font-size: var(--fs-18);
+}
+
+.course-content-what .course-modules-wrapper{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.course-content-what .list-number span{
+    font-size: var(--fs-18);
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+    background-color: var(--swan);
+    padding: 10px 20px;
+    /* text-align: center; */
+    border-radius: 10px;
+}
+
+.course-content-what .what-will-learn2{
+    font-size: var(--fs-18);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.insturct-img{
+    width: 100px;
+    height: 100px;
+    background: var(--bee);
+    border-radius: 50%;
+}
+
+.enroll{
+    padding: 15px 24px;
+    border: none;
+    background: var(--humpback);
+    border-radius: 10px;
+    color: var(--snow);
+    font-weight: var(--fw-semibold);
+}
+.enroll:hover{
+    background-color: var(--beetle);
+}
+
+.back{
+    padding: 15px 29px;
+    border: none;
+    background: none;
+    border: 2px solid var(--hare);
+    border-radius: 10px;
+    color: var(--eel);
+    font-weight: var(--fw-semibold);
+}
+.back:hover{
+    background: var(--wolf);
+    color: var(--snow);
+    border: 2px solid var(--snow);
+}
+
 @media screen and (max-width: 768px) {
     .image-wrap{
+        width: 100%;
+    }
+    .course-content-wrap{
         width: 100%;
     }
 }
