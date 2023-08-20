@@ -1,6 +1,7 @@
 *{
     font-family: 'Inter','Open Sans', sans-serif;
 }
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -12,6 +13,37 @@
     --dark : #222831;
     --white : #ffffff;
     --light : #EEEEEE;
+
+    /* neutrals  */
+    --eel: #4b4b4b;
+    --wolf: #777;
+    --hare: #afafaf;
+    --swan: #e5e5e5;
+    --polar: #f7f7f7;
+    --snow: #fff;
+    --shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+    /* font family  */
+    --font-open-sans: 'Open Sans', sans-serif;
+
+    /* font size  */
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+
+    /* font weight  */
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
 }
 
 /* navbar start  */
@@ -246,6 +278,118 @@ nav ul li a.nav-active::after {
     line-height: normal;
 }
 
+/* end of website info div  */
+
+/* start of recommend courses  */
+/* popular course  */
+.popular-course{
+    background-color: transparent;
+    padding-bottom: 25px;
+}
+
+.popular-course h4, .latest-course .title h4{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
+
+.popular-course span, .latest-course .title span{
+    font-size: var(--fs-14);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.p-card{
+    text-decoration: none;
+    width: 360px !important;
+    height: 260px !important;
+    border-radius: 10px;
+    border: 1px solid #AFAFAF;
+    background: #FFF;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.p-card:hover{
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.42);
+}
+
+.p-card .card-img{
+    width: 340px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(175, 175, 175, 0.50);
+}
+
+.p-card .card-content .content h5{
+    padding-top: 10px;
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+    text-decoration: none;
+    font-size: var(--fs-16);
+}
+
+.p-card .card-content .content span{
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+    font-size: var(--fs-14);
+}
+
+.p-card .card-content .price span{
+    font-weight: var(--fw-bold);
+    color: var(--humpback) !important;
+    font-size: 14px;
+}
+
+.p-card .badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    background-color: var(--swan);
+    padding: 10px 10px;
+}
+
+/* end of popular courses  */
+
+/* start of top categories  */
+
+.top-categories .card-img-top {
+    object-fit: contain;
+    object-position: center;
+}
+
+.top-categories .card-title {
+    color: #FFF;
+    text-align: start;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top-categories .card-text {
+    color: rgba(238, 238, 238, 0.80);
+    text-align: start;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top-categories .categories-title {
+    color: var(--primary);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
 
 /* for mobile responsive  */
 @media only screen and (max-width: 600px) {
@@ -355,4 +499,47 @@ nav ul li a.nav-active::after {
         padding: 15px 20px;
     }
 
+    .site-div {
+        height: auto;
+        padding: 0px 15px;
+
+        padding-top: 20px;
+    }
+
+    .site-div:last-child{
+        height: auto;
+        padding: 20px 15px;
+    }
+    
+    .site-info {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-heading {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    
+    .info-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .top-categories .card-img-top {
+        width: 200px;
+        height: 150px;
+    }
+
+    .top-categories .card-text {
+        font-size: 8px;
+        font-weight: 500;
+    }
+    
+    .top-categories .card-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
