@@ -474,7 +474,43 @@ nav ul li a.nav-active::after {
     margin: 20px 0px;
   }
 
+  .sponsor-container {
+    width: 80px;
+  }
+
+  .sponsor-logo {
+    width: 100%;
+
+    object-position: center;
+    object-fit: cover;
+  }
+
+
 /* end of sponsor session  */
+
+/* start of copyright session */
+  .copyright-text-1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .copyright-text-2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+/* end or copyright session  */
+
+
 /* for mobile responsive  */
 @media only screen and (max-width: 600px) {
     
