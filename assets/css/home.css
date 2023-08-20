@@ -221,7 +221,7 @@ nav ul li a.nav-active::after {
 }
 
 .site-info {
-    background-color: var(--light) ;
+    background-color: var(--white) ;
     border-radius: 10px;
     box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.25);
     padding: 20px;
@@ -355,9 +355,19 @@ nav ul li a.nav-active::after {
 
 /* start of top categories  */
 
+.top-categories .category-img-container {
+    cursor: pointer;
+    height: 221px;
+    overflow: hidden;
+    position: relative;
+}
+
 .top-categories .card-img-top {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
+    transition: .5s;
 }
 
 .top-categories .card-title {
@@ -380,15 +390,186 @@ nav ul li a.nav-active::after {
     line-height: normal;
 }
 
-.top-categories .categories-title {
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(246, 246, 246, 0.6),#4A87CE);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-weight: 500;
+}
+
+.layer a {
+    margin-top: 10px;
     color: var(--primary);
-    font-size: 34px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    text-align: center;
+}
+
+.category-img-container:hover img {
+    transform: scale(1.3);
+}
+.category-img-container:hover .layer {
+    height: 100%;
+}
+
+
+.session-title {
+    color: var(--primary);
+    font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 43px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .review-text {
+    text-align: start;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+/* review session end  */
+
+/* start of certificate session  */
+  .img-certificate {
+    background: url("../../assets/images/4x/person\ showing\ certificate@4x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+  }
+
+  .certificate-title {
+    color: var(--primary);
+    text-align: start;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .certificate-text {
+    color: var(--eel);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  .btn-enroll {
+    padding: 15px 20px;
+    color: var(--light, #EEE);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+/* end of certificate session  */
+
+/* start of sponsor session  */
+
+  .sponsor-title {
+    color: var(--primary);
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0px;
+  }
+
+  .sponsor-container {
+    width: 80px;
+  }
+
+  .sponsor-logo {
+    width: 100%;
+
+    object-position: center;
+    object-fit: cover;
+  }
+
+
+/* end of sponsor session  */
+
+/* start of copyright session */
+  .copyright-text-1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .copyright-text-2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+/* end or copyright session  */
 
 
 /* for mobile responsive  */
@@ -528,9 +709,15 @@ nav ul li a.nav-active::after {
         font-weight: 400;
     }
 
-    .top-categories .card-img-top {
-        width: 200px;
+    .top-categories .category-img-container {
         height: 150px;
+    }
+
+    .top-categories .card-img-top {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
     }
 
     .top-categories .card-text {
@@ -541,5 +728,55 @@ nav ul li a.nav-active::after {
     .top-categories .card-title {
         font-size: 14px;
         font-weight: 600;
+    }
+
+    .session-title {
+        font-size: 20px;
+    }
+
+    .img-certificate {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .certificate-title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    
+      .certificate-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+    
+      .btn-enroll {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .layer {
+        padding: 0 15px;
+    }
+    
+    .layer h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .layer p {
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .layer a {
+        margin-top: 10px;
+        font-size: 18px;
+        background: #fff;
+        padding: 10px;
+        line-height: 42px;
     }
 }
