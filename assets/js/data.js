@@ -90,7 +90,7 @@ const profile_page = document.querySelector(".profile-section");
 
 
 // uploaded popular course
-const uplode_pp_course = (items) => {
+const upload_pp_course = (items) => {
     const pp_courses = items.map(e => {
         return `
             <a href="./detail.html?idd=${e.id}" class="p-card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
@@ -118,7 +118,7 @@ const uplode_pp_course = (items) => {
     .join(" ");
     popular_course_wrapper.innerHTML = pp_courses;
 }
-uplode_pp_course(courses);
+upload_pp_course(courses);
 
 // searching function
 const search = document.querySelector(".searchbar");
