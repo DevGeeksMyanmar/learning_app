@@ -345,7 +345,7 @@ nav ul li a.nav-active::after {
     }
     
     .learn-now .learn-desc {
-        width: 350px;
+        width: auto;
         font-size: 14px;
     }
     
