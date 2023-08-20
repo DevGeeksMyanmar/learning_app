@@ -1,0 +1,358 @@
+*{
+    font-family: 'Inter','Open Sans', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root {
+    --primary : #7711FA;
+    --secondary : #4A87CE;   
+     --muted : #73767A;
+    --dark : #222831;
+    --white : #ffffff;
+    --light : #EEEEEE;
+}
+
+/* navbar start  */
+.navbar .fa-solid {
+    display: none;
+}
+.nav-item {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--muted);
+    text-align: center;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.nav-active::after {
+    width: 100%;
+}
+
+.btn-login , .btn-register {
+    transition: .5s;
+}
+
+/* navbar end  */
+
+/* learn now session start  */
+.learn-now .img-learn {
+    background: url(../images/home_images/laptop.png);
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.learn-container {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.learn-container .left-div {
+    position : absolute;
+    left: 0;
+    width: 60%;
+}
+
+.learn-container .right-div {
+    position : absolute;
+    width: 724px;
+    height: 600px;
+    right: 0;
+}
+
+.learn-now .text-div {
+    padding: 120px 60px;
+}
+
+.learn-now p {
+    margin: 0;
+}
+
+.learn-now .title-1 {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.learn-now .title-2 {
+    color: var(--primary);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.learn-now .title-3 {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.learn-now .learn-desc {
+    width: 609px;
+    color:  #73767A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.learn-now .btn-learn-now {
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.btn-learn-now:hover {
+    color : var(--white);
+    background-color: var(--primary);
+}
+
+/* learn now session end  */
+
+/* info section  start */
+
+.site-div {
+    height: 220px;
+    padding: 25px 20px;
+}
+
+.site-info {
+    background-color: var(--light) ;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-img-1 {
+    background: url("../../assets/images/icons/online-education.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-img-2 {
+    background: url("../../assets/images/icons/student.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-img-3 {
+    background: url("../../assets/images/icons/female.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-heading {
+    color: var(--dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.info-text {
+    color: var(--dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* for mobile responsive  */
+@media only screen and (max-width: 600px) {
+    
+    nav ul {
+        background: var(--secondary);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .navbar .fa-solid {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-item {
+        color: var(--white);
+        font-weight: 400;
+        width: 80px;
+    }
+
+   
+
+    .btn-login, .btn-register {
+        display: none;
+    }
+
+    .learn-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .learn-container .left-div,
+    .learn-container .right-div {
+        position: static;
+        width: 100%; 
+        height: auto;
+    }
+
+    
+    .learn-container .right-div {
+        position : static;
+        display: block;
+        width: 100%;
+        height: 300px;
+        right: 0;
+    }
+
+    .learn-now .text-div {
+        padding: 0px 20px;
+    }
+    
+    .learn-now p {
+        margin: 0;
+    }
+    
+    .learn-now .title-1 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .learn-now .title-2 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    
+    .learn-now .title-3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    .learn-now .learn-desc {
+        width: 350px;
+        font-size: 14px;
+    }
+    
+    .learn-now .btn-learn-now {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 20px;
+    }
+
+}
