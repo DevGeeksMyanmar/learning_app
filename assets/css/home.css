@@ -221,7 +221,7 @@ nav ul li a.nav-active::after {
 }
 
 .site-info {
-    background-color: var(--light) ;
+    background-color: var(--white) ;
     border-radius: 10px;
     box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.25);
     padding: 20px;
@@ -380,17 +380,101 @@ nav ul li a.nav-active::after {
     line-height: normal;
 }
 
-.top-categories .categories-title {
+.session-title {
     color: var(--primary);
-    font-size: 34px;
+    font-size: 28px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
 }
 
 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .swiper-slide img {
+    width: 43px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .review-text {
+    text-align: start;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+/* review session end  */
+
+/* start of certificate session  */
+  .img-certificate {
+    background: url("../../assets/images/4x/person\ showing\ certificate@4x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+  }
+
+  .certificate-title {
+    color: var(--primary);
+    text-align: start;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .certificate-text {
+    color: var(--eel);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  .btn-enroll {
+    padding: 15px 20px;
+    color: var(--light, #EEE);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+/* end of certificate session  */
+
+/* start of sponsor session  */
+
+  .sponsor-title {
+    color: var(--primary);
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0px;
+  }
+
+/* end of sponsor session  */
 /* for mobile responsive  */
 @media only screen and (max-width: 600px) {
     
@@ -542,4 +626,34 @@ nav ul li a.nav-active::after {
         font-size: 14px;
         font-weight: 600;
     }
+
+    .session-title {
+        font-size: 20px;
+    }
+
+    .top-categories .card-img-top {
+        width: 100%;
+    }
+
+    .img-certificate {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .certificate-title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    
+      .certificate-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+    
+      .btn-enroll {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
 }
