@@ -1,25 +1,32 @@
 let lecture = [
-    // week 1
+    // Java
     {
-        "id": 1,
+        "course_id": 1,
         "lecutures": [
-            {
-                "title": "",
-                "link": ""
-            },
-
-            {
-                "title": "",
-                "link": ""
-            },
-            {
-                "title": "",
-                "link": ""
-            },
-
+            //week 1
+            [
+                {
+                    "title": "",
+                    "link": ""
+                }
+            ],
+            //week 2
+            [
+                {
+                    "title": "",
+                    "link": ""
+                }
+            ],
+            //week 3
+            [
+                {
+                    "title": "",
+                    "link": ""
+                }
+            ],
         ]
     },
-    //week 2
+    //Python
     
 
 ]
