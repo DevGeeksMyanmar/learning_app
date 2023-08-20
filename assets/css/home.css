@@ -355,9 +355,19 @@ nav ul li a.nav-active::after {
 
 /* start of top categories  */
 
+.top-categories .category-img-container {
+    cursor: pointer;
+    height: 221px;
+    overflow: hidden;
+    position: relative;
+}
+
 .top-categories .card-img-top {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
+    transition: .5s;
 }
 
 .top-categories .card-title {
@@ -379,6 +389,57 @@ nav ul li a.nav-active::after {
     font-weight: 600;
     line-height: normal;
 }
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(246, 246, 246, 0.6),#4A87CE);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-weight: 500;
+}
+
+.layer a {
+    margin-top: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    text-align: center;
+}
+
+.category-img-container:hover img {
+    transform: scale(1.3);
+}
+.category-img-container:hover .layer {
+    height: 100%;
+}
+
 
 .session-title {
     color: var(--primary);
@@ -648,9 +709,15 @@ nav ul li a.nav-active::after {
         font-weight: 400;
     }
 
-    .top-categories .card-img-top {
-        width: 200px;
+    .top-categories .category-img-container {
         height: 150px;
+    }
+
+    .top-categories .card-img-top {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
     }
 
     .top-categories .card-text {
@@ -665,10 +732,6 @@ nav ul li a.nav-active::after {
 
     .session-title {
         font-size: 20px;
-    }
-
-    .top-categories .card-img-top {
-        width: 100%;
     }
 
     .img-certificate {
@@ -692,4 +755,28 @@ nav ul li a.nav-active::after {
         font-size: 16px;
         font-weight: 400;
       }
+
+      .layer {
+        padding: 0 15px;
+    }
+    
+    .layer h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .layer p {
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .layer a {
+        margin-top: 10px;
+        font-size: 18px;
+        background: #fff;
+        padding: 10px;
+        line-height: 42px;
+    }
 }
