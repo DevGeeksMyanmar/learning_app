@@ -422,6 +422,7 @@ nav ul li a.nav-active::after {
 
 .layer a {
     margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--primary);
     text-decoration: none;
     font-size: 18px;
@@ -481,6 +482,17 @@ nav ul li a.nav-active::after {
     line-height: normal;
   }
 
+  .student-reviews .card {
+    width: 26rem;
+  }
+  .student-reviews .profile-img {
+    width: 80px;
+  }
+
+  .student-reviews .medal-img {
+    width: 60px;
+  }
+
 /* review session end  */
 
 /* start of certificate session  */
@@ -528,7 +540,7 @@ nav ul li a.nav-active::after {
   .sponsor-title {
     color: var(--primary);
     text-align: center;
-    font-size: 42px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -553,7 +565,7 @@ nav ul li a.nav-active::after {
   .copyright-text-1 {
     color: #FFF;
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -563,7 +575,7 @@ nav ul li a.nav-active::after {
   .copyright-text-2 {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -599,6 +611,7 @@ nav ul li a.nav-active::after {
         left: 25px;
         cursor: pointer;
     }
+
 
     .navbar .fa-solid {
         font-size: 30px;
@@ -773,10 +786,44 @@ nav ul li a.nav-active::after {
     }
     
     .layer a {
+        width: 40px;
+        height: 40px;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 14px;
         background: #fff;
-        padding: 10px;
-        line-height: 42px;
+        padding :10px;
+        line-height: 22px;
     }
+
+    .student-reviews .card {
+        width: 14rem;
+    }
+
+    .review-text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .student-reviews .profile-img {
+        width: 60px;
+    }
+
+    .student-reviews span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .student-reviews .fa-solid {
+        font-size: 12px;
+    }
+
+    .student-reviews .medal-img {
+        width: 40px;
+    }
+
+    .sponsor-title {
+        font-size: 26px;
+        font-weight: 600;
+      }
+
 }
