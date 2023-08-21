@@ -136,6 +136,7 @@
     background: var(--snow);
     border-radius: 10px;
 }
+
 .fa-check-circle{
     position: absolute;
     right: 20px;
