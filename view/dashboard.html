@@ -26,7 +26,11 @@
                 <!-- logo  -->
                 <div class="row p-4 mb-5 d-none d-md-block">
                     <div class="col-12 d-flex align-items-center justify-content-center">
-                        <div class="logo-box">
+                        <div class="logo-box"
+                            style="background: url(../assets/images/logo/logo.png);
+                                   background-position: center;
+                                   background-repeat: no-repeat;
+                                   background-size: cover;">
                             <!-- this is logo box  -->
                         </div>
                     </div>
@@ -88,7 +92,7 @@
                     <!-- this is search bar  -->
                     <div class="col-12 col-md-6 search-bar d-flex align-items-center justify-content-end">
                         <div class="search-wrapper d-flex align-items-center">
-                            <input class="me-3" type="search" placeholder="Search courses...">
+                            <input class="me-3 searchbar" type="text" placeholder="Search courses...">
                             <img src="../assets/svg/search.svg" alt="">
                         </div>
                     </div>
@@ -103,6 +107,7 @@
                         </div>
                         <div class="swiper mySwiper2 mt-1">
                             <div class="swiper-wrapper">
+                                <a href="" class="category-link swiper-slide">All</a>
                                 <a href="" class="category-link swiper-slide">Java</a>
                                 <a href="" class="category-link swiper-slide">Python</a>
                                 <a href="" class="category-link swiper-slide">HTML</a>
@@ -151,7 +156,7 @@
 
                         <div class="title mb-3">
                             <h4>Latest Course</h4>
-                            <span>Find what it right for you!</span>
+                            <span>Find what is right for you!</span>
                         </div>
                         <!-- course card will go here  -->
                         <div class="row latest-course-wrapper">
@@ -173,13 +178,142 @@
             </div>
             <!-- this is end of main section  -->
 
+            <!-- this is recent section  -->
+            <div class="col-12 col-md-10 recent-section px-4 py-2 order-0 order-md-1">
+
+                <!-- this is navbar  -->
+                <div class="row mb-3">
+                    <!-- this is profile  -->
+                    <div class="col-12 col-md-6 profile d-flex align-items-center justify-content-start">
+                        <div class="profile-image me-3"></div>
+                        <div class="profile-name-and-email d-flex flex-column align-items-start justify-content-center">
+                            <span class="username">Username</span>
+                            <span class="useremail">example@gamil.com</span>
+                        </div>
+                    </div>
+                    <!-- this is search bar  -->
+                    <div class="col-12 col-md-6 search-bar d-flex align-items-center justify-content-end">
+                        <div class="search-wrapper d-flex align-items-center">
+                            <input class="me-3 searchbar" type="text" placeholder="Search courses...">
+                            <img src="../assets/svg/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- this is end of navbar  -->
+                <!-- this is your coures  -->
+                <div class="row">
+                    <div class="col-12 latest-course">
+
+                        <div class="title mb-3">
+                            <h4>Your Courses</h4>
+                            <span>Wow, you are amazing! You are doing well.</span>
+                        </div>
+                        <!-- course card will go here  -->
+                        <div class="row latest-course-wrapper">
+                            
+                            <!-- yours course goes here  -->
+                            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                <a href="" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+                                    <div class="card-img mb-2" 
+                                        style="background: url(../assets/pic/BCG-Web-Development-NEW-Banner.png);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;"></div>
+                                    <div class="w-100 card-content d-flex align-items-center justify-content-between mb-2">
+                                        <div class="content d-flex flex-column align-items-start justify-content-center">
+                                            <h5>Java Core</h5>
+                                        </div>
+                                        <div class="price">
+                                            <span>Progress: 25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 card-progress d-flex align-items-center justify-content-center">
+                                        <div class="myprogressbar"></div>
+                                    </div>
+                                 </a>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+                        <div class="mb-5"></div>
+
+                    </div>
+                </div>
+                <!-- this is end of your course  -->
+
+            </div>
+            <!-- this is end of recent section  -->
+
+            <!-- this is profile  -->
+            <div class="col-12 col-md-10 profile-section px-4 py-2 order-0 order-md-1">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <!-- profile card goes here  -->
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center profile-card-wrapper">
+
+                        <div class="profile-card">
+                            <div class="row p-3">
+                                <!-- profile image  -->
+                                <div class="col-12 d-flex align-items-center justify-content-center">
+                                    <div class="img"></div>
+                                </div>
+
+                                <!-- profile name and gamil  -->
+                                <div class="col-12 mb-3 border-bottom  d-flex align-items-center justify-content-center flex-column">
+                                    <h3>Username</h3>
+                                    <span>example@gmail.com</span>
+                                    <button class="mb-3">Edit Profile</button>
+                                </div>
+
+                                <div class="col-12 mb-2 d-flex align-items-center justify-content-between profile-settings">
+                                    <span>Setting</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="col-12 mb-2 d-flex align-items-center justify-content-between profile-settings">
+                                    <span>User Management</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="col-12 mb-2 border-bottom d-flex align-items-center justify-content-between profile-settings">
+                                    <span>Bill and Payments</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+                                <div class="col-12 mb-2 d-flex align-items-center justify-content-between profile-settings">
+                                    <span>Certificates</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="col-12 mb-2 d-flex align-items-center justify-content-between profile-settings">
+                                    <span>Privacy</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="col-12 d-flex align-items-center justify-content-between profile-settings">
+                                    <span>Delete Account</span>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- this is end of profile  -->
+
         </div>
+
     </div>
     <!-- end of container  -->
 
+    <!-- bootstrap js links  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
     <!-- data js file  -->
-    <script src="../assets/js/data.js" type="module"></script>
-    <script src="../assets/js/api.js" type="module"></script>
+    <script src="../assets/js/data.js" ></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 

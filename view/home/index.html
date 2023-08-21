@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link to custom bootstrap css  -->
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <!-- link to home css  -->
+    <link rel="stylesheet" href="../../assets/css/home.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- google font inter cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- google font opensan cdn link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- scroll reveal cdn  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- dashboard css  -->
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />  
+  
+  </head>
+<body>
+  <!-- navbar start  -->
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="./index.html"><img width="60" src="../../assets/images/logo/logo.png" alt=""></a>
+        <ul class="">
+          <li class="nav-item">
+            <a class="nav-link nav-active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">More</a>
+          </li>
+          <i class="fa-solid fa-xmark btn-close-menu"></i>
+        </ul>
+        <i class="fa-solid fa-bars btn-open-menu"></i>
+      <div class="d-flex me-4 btn-auth">
+        <button class="btn btn-primary btn-login px-4 py-2 fw-semibold me-2">Login</button>
+        <button class="btn btn-outline-primary btn-register px-4 py-2 fw-semibold border border-2 border-primary">Register</button>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+  <!-- learn now start  -->
+    <session class="learn-now">
+      <div class="container-fluid">
+        <div class="learn-container">
+          <div class="right-div">
+            <div class="img-learn"></div>
+          </div>
+          <div class="left-div text-div">
+            <p class="my-0 title-1">Start your journey with</p>
+            <p class="my-0 title-2">DEVGEEKS Learning Site</p>
+            <p class="title-3">All online courses in one</p>
+            <p class="learn-desc">
+              Lorem ipsum dolor sit amet consectetur. Consectetur augue eget bibendum dolor tellus odio in etiam non. Gravida quis neque sit id ultricies semper egestas risus at. 
+            </p>
+            <button class="btn-learn-now">learn now</button>
+          </div>
+          
+        </div>
+      </div>
+    </session>
+  <!-- learn now end  -->
+  <!-- website info session start  -->
+  <session class="session-info">
+    <div class="container-fluid">
+      <div class="row bg-secondary">
+        <div class="col-md-4 site-div"><div class="site-info"><div class="info-img info-img-1"></div><div class="ms-3"><h5 class="info-heading">200K+</h5><p class="info-text">online courses</p></div></div></div>
+        <div class="col-md-4 site-div"><div class="site-info"><div class="info-img info-img-2"></div><div class="ms-3"><h5 class="info-heading">3M+</h5><p class="info-text">our students</p></div></div></div>
+        <div class="col-md-4 site-div"><div class="site-info"><div class="info-img info-img-3"></div><div class="ms-3"><h5 class="info-heading">200K+</h5><p class="info-text">our instructors</p></div></div></div>
+      </div>
+    </div>
+  </session>
+  <!-- website info session end  -->
+  <!--  popular course  start -->
+  <session class="session-popular">
+    <div class="container-fluid p-4">
+      <div class="row border-bottom mb-3">
+        <div class="col-12 popular-course p-2">
+            <div class="title mb-2">
+                <h3 class="my-0 fw-semibold text-primary">Popular Courses</h3>
+                <span>Skills up with these courses!</span>
+            </div>
+            <!-- swiper goes here  -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper popular-course-wrapper">
+                  
+                    <!-- course goes here  -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </session>
+<!-- popular course end  -->
+<!-- top categories start  -->
+<session class="top-categories">
+  <div class="container-fluid">
+    <h4 class="session-title ms-2">Top Categories to learn</h4>
+    <div class="row p-3">
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+            <img class="card-img-top"  src="../../assets/images/home_images/design.jpg" alt="Card image cap">
+            <div class="layer">
+              <h3>Graphic Design</h3>
+              <p class="m-0">We offer graphic design courses for students.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Design</p>
+            <p class="card-text my-0">120 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+            <img class="card-img-top"  src="../../assets/images/home_images/devlopment.jpg" alt="Card image cap">
+            <div class="layer">
+              <h3>Web Development</h3>
+              <p class="m-0">We offer web development courses for students.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Development</p>
+            <p class="card-text my-0">89 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+          <img class="card-img-top"  src="../../assets/images/home_images/marketing.jpg" alt="Card image cap">
+          <div class="layer">
+            <h3>Digital Marketing</h3>
+            <p class="m-0">We offer digital marketing courses for students.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Marketing</p>
+            <p class="card-text my-0">79 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+          <img class="card-img-top"  src="../../assets/images/home_images/IT.jpg" alt="Card image cap">
+          <div class="layer">
+            <h3>IT and Software</h3>
+            <p class="m-0">We offer IT and Software courses for students.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">IT and Software</p>
+            <p class="card-text my-0">57 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+            <img class="card-img-top"  src="../../assets/images/home_images/personal.jpg" alt="Card image cap">
+            <div class="layer">
+              <h3>Personal Development</h3>
+              <p class="m-0">We offer personal development courses for beginners.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Personal Development</p>
+            <p class="card-text my-0">43 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+          <img class="card-img-top"  src="../../assets/images/home_images/business.jpg" alt="Card image cap">
+          <div class="layer">
+            <h3>Business</h3>
+            <p class="m-0">We offer business courses for beginners.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Business</p>
+            <p class="card-text my-0">32 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+          <img class="card-img-top"  src="../../assets/images/home_images/photography.jpg" alt="Card image cap">
+          <div class="layer">
+            <h3>Photography</h3>
+            <p class="m-0">We offer photography courses for beginners.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>  
+        </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Photography</p>
+            <p class="card-text my-0">21 courses</p>
+          </div>
+        </div>
+      </div>
+      <div class="category-box col-6 mb-4 col-md-3">
+        <div class="card  rounded-2">
+          <div class="category-img-container">
+          <img class="card-img-top"  src="../../assets/images/home_images/music.jpg" alt="Card image cap">
+          <div class="layer">
+            <h3>Music</h3>
+            <p class="m-0">We offer music courses for beginners.
+            </p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+          <div class="card-body rounded-top-0 rounded-2 py-2 bg-secondary">
+            <p class="card-title my-0">Music</p>
+            <p class="card-text my-0">18 courses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</session>
+<!-- top categories end  -->
+<hr class="mb-4">
+<!-- student review start  -->
+<session class="student-reviews">
+  <div class="container-fluid pb-4">
+    <h4 class="session-title ms-2 mb-4">What Our Student Says</h4>
+    <div class="row">
+      <div class="col-12">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="review-box card swiper-slide" style="width: 26rem;">
+              <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                  <div class="col-6"><img src="../../assets/images/home_images/profile.png" style="width: 80px;"><span class="ms-2 fw-semibold">Woody</span></div>
+                  <div class="col-6"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <p class="my-0 review-text">Lorem ipsum dolor sit amet consectetur. Turpis vitae turpis commodo ullamcorper netus tristique ultrices praesent. Consect etur pulvinar non auctor parturi</p>
+              </div>
+              <div class="card-footer bg-primary text-white">
+                <img src="../../assets/images/home_images/medal.png" class="me-2"  alt="">
+                <span>Free Python Courses for Beginners</span>
+              </div>
+            </div>
+             <div class="review-box card swiper-slide" style="width: 26rem;">
+              <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                  <div class="col-6"><img src="../../assets/images/home_images/profile.png" style="width: 80px;"><span class="ms-2 fw-semibold">Woody</span></div>
+                  <div class="col-6"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <p class="my-0 review-text">Lorem ipsum dolor sit amet consectetur. Turpis vitae turpis commodo ullamcorper netus tristique ultrices praesent. Consect etur pulvinar non auctor parturi</p>
+              </div>
+              <div class="card-footer bg-primary text-white">
+                <img src="../../assets/images/home_images/medal.png" class="me-2"  alt="">
+                <span>Free Python Courses for Beginners</span>
+              </div>
+            </div>
+             <div class="review-box card swiper-slide" style="width: 26rem;">
+              <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                  <div class="col-6"><img src="../../assets/images/home_images/profile.png" style="width: 80px;"><span class="ms-2 fw-semibold">Woody</span></div>
+                  <div class="col-6"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <p class="my-0 review-text">Lorem ipsum dolor sit amet consectetur. Turpis vitae turpis commodo ullamcorper netus tristique ultrices praesent. Consect etur pulvinar non auctor parturi</p>
+              </div>
+              <div class="card-footer bg-primary text-white">
+                <img src="../../assets/images/home_images/medal.png" class="me-2"  alt="">
+                <span>Free Python Courses for Beginners</span>
+              </div>
+            </div>
+             <div class="review-box card swiper-slide" style="width: 26rem;">
+              <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                  <div class="col-6"><img src="../../assets/images/home_images/profile.png" style="width: 80px;"><span class="ms-2 fw-semibold">Woody</span></div>
+                  <div class="col-6"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <p class="my-0 review-text">Lorem ipsum dolor sit amet consectetur. Turpis vitae turpis commodo ullamcorper netus tristique ultrices praesent. Consect etur pulvinar non auctor parturi</p>
+              </div>
+              <div class="card-footer bg-primary text-white">
+                <img src="../../assets/images/home_images/medal.png" class="me-2"  alt="">
+                <span>Free Python Courses for Beginners</span>
+              </div>
+            </div>
+             <div class="review-box card swiper-slide" style="width: 26rem;">
+              <div class="card-body px-4 py-3">
+                <div class="row align-items-center">
+                  <div class="col-6"><img src="../../assets/images/home_images/profile.png" style="width: 80px;"><span class="ms-2 fw-semibold">Woody</span></div>
+                  <div class="col-6"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div>
+                <p class="my-0 review-text">Lorem ipsum dolor sit amet consectetur. Turpis vitae turpis commodo ullamcorper netus tristique ultrices praesent. Consect etur pulvinar non auctor parturi</p>
+              </div>
+              <div class="card-footer bg-primary text-white">
+                <img src="../../assets/images/home_images/medal.png" class="me-2"  alt="">
+                <span>Free Python Courses for Beginners</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</session>
+<!-- student review end  -->
+<!-- certificate session start  -->
+<session class="certificate">
+  <div class="container-fluid">
+    <div class="row bg-light border-bottom px-3 px-md-5 pb-5 pb-md-3  align-items-center">
+      <div class="col-md-6">
+        <div class="img-certificate mx-auto"></div>
+      </div>
+      <div class="col-md-6 certificate-box">
+        <p class="m-0 mb-2 certificate-title">Certificate after course</p>
+        <p class="m-0 mb-3 certificate-text">Lorem ipsum dolor sit amet consectetur. A mi duis magna in nisi neque aliquet. Id massa suspendisse dignissim diam id volutpat rhoncus</p>
+        <button class="btn btn-primary btn-enroll">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+</session>
+<!-- certificate session end  -->
+<!-- sponsor session start  -->
+<session class="sponsor">
+  <div class="container-fluid py-3 border-bottom px-3">
+    <h4 class="sponsor-title">Our Sponsors</h4>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="sponsor-container m-3">
+        <img src="../../assets/images/home_images/sponsors/codeacademy.png" alt="" class="sponsor-logo">
+      </div>
+      <div class="sponsor-container m-3">
+        <img src="../../assets/images/home_images/sponsors/edx.png" alt="" class="sponsor-logo">
+      </div>
+      <div class="sponsor-container m-3">
+        <img src="../../assets/images/home_images/sponsors/github.png" alt="" class="sponsor-logo">
+      </div>
+      <div class="sponsor-container m-3">
+        <img src="../../assets/images/home_images/sponsors/geek.jpg" alt="" class="sponsor-logo">
+      </div>
+      <div class="sponsor-container m-3">
+        <img src="../../assets/images/home_images/sponsors/Udemy-Logo.png" alt="" class="sponsor-logo">
+      </div>
+    </div>
+  </div>
+</session>
+<!-- sponsor session end  -->
+<!-- copyright session  start -->
+  <session class="copyright">
+    <div class="container-fluid">
+      <div class="row bg-secondary py-4">
+        <span class="copyright-text-1"><i class="fa-solid fa-copyright me-2"></i>Copyright 2023</span>
+        <span class="copyright-text-2">All right reserved by DevGeeks</span>
+        
+      </div>
+    </div>
+  </session>
+<!-- copyright session end  -->
+
+
+  <!-- bootstrap js cdn  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  
+  <!-- jquery minified cdn  -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  
+  <!-- home js src here  -->
+  <script src="../../assets/js/home.js"></script>
+  
+  <!-- scroll reveal script src here  -->
+  <script src="../../assets/js/scrollreveal.js"></script>
+      
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+  <!-- Initialize Swiper -->
+      <script>
+      var swiper2 = new Swiper(".mySwiper2", {
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+          freeMode: true,
+      });
+  
+      var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          freeMode: true,
+      });
+      </script>
+</body>
+</html>
