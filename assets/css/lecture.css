@@ -132,14 +132,21 @@
     cursor: pointer;
     text-align: center;
     border: 2px solid var(--swan) !important;
+    position: relative;
+    background: var(--snow);
+    border-radius: 10px;
+}
+.fa-check-circle{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    color: var(--humpback);
 }
 
-.video-part.active{
-    border: 2px solid #14a44e80 !important;
-}
 
 .video-part:hover{
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
+    border: 2px solid var(--wolf) !important;
 }
 
 .play-circle-icon{
@@ -249,5 +256,10 @@ button{
 
     .main-section .video{
         height: 35vh;
+    }
+
+    .fa-check-circle{
+        top: 5px;
+        right: 5px;
     }
 }
