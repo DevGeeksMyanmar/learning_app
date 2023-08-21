@@ -90,7 +90,11 @@
                 color: var(--hare);
             }
     
-            .input{
+            .input-group {
+                position: relative;
+            }
+
+            .input {
                 display: block;
                 margin: auto;
                 margin-bottom: 16px;
@@ -99,11 +103,31 @@
                 height: 40px;
                 border: 1px solid var(--hare);
                 border-radius: 5px;
-                outline: none;
+                background: none;
+                font-size: var(--fs-16);
+                transition: border 150ms cubic-bezier(0.4,0,0.2,1);
             }
-    
-            .input:focus{
-                outline: 1px solid var(--humpback);
+
+            .user-label {
+                position: absolute;
+                left: 66px;
+                bottom: 27px;
+                color: black;
+                pointer-events: none;
+                transform: translateY(1rem);
+                transition: 150ms cubic-bezier(0.4,0,0.2,1);
+            }
+
+            .input:focus, input:valid {
+                outline: none;
+                border: 1px solid var(--humpback);
+            }
+
+            .input:focus ~ label, input:valid ~ label {
+                transform: translateY(-6%) scale(0.8);
+                background-color: var(--polar);
+                padding: 0.2em;
+                color: var(--humpback);
             }
     
             .continue{
@@ -191,11 +215,17 @@
                 <div class="log-in">Welcome back</div>
                 <div class="text">To continue, please sign up first or login.</div>
             </div>
-    
+
+            <!-- input-start -->
             <div class="input-group">
-                <input type="email" placeholder="Email" class="input">
-                <input type="password" placeholder="Password" class="input">
+                <input required="" type="text" name="text" autocomplete="off" class="input">
+                <label class="user-label">Email</label>
             </div>
+            <div class="input-group">
+                <input required="" type="password" name="text" autocomplete="off" class="input">
+                <label class="user-label">Password</label>
+            </div>
+            <!-- input-end -->
     
             <div  class="continue">
                 <button>Continue</button>
