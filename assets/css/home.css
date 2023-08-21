@@ -485,7 +485,7 @@ nav ul li a.nav-active::after {
 
 /* start of certificate session  */
   .img-certificate {
-    background: url("../../assets/images/4x/person\ showing\ certificate@4x.png");
+    background: url("../../assets/images/home_images/personCerti.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
