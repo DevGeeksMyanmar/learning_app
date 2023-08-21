@@ -1,17 +1,82 @@
 let courses = [
-    {'id': 1, 'name': 'Core Java', 'short_desc': 'Complete Java Full Course', 'price': 89.0, 'image': '../assets/pic/Java-BCG-Banner.png'},
-    {'id': 2, 'name': 'Python Beginner', 'short_desc': 'Python Course for Beginner', 'price': 'Free', 'image': '../assets/pic/FREE-Python-Course-For-Beginners.png'},
-    {'id': 3, 'name': 'JavaScript Course', 'short_desc': 'JavaScript Full Course', 'price': 69.0, 'image': '../assets/pic/JavaScript-BCG-Banner-icons.png'},
-    {'id': 4, 'name': 'PHP Tutorial', 'short_desc': 'PHP programming Language', 'price': 89.0, 'image': '../assets/pic/skill-guide-php.png'},
-    {'id': 5, 'name': 'Web Development', 'short_desc': 'Web Development Bootcamp', 'price': 199.0, 'image': '../assets/pic/BCG-Web-Development-NEW-Banner.png'},
+    {
+    'id': 1,
+    'name': 'Core Java',
+    'short_desc': 'Complete Java Full Course',
+    'price': 89.0,
+    'image': '../assets/pic/Java-BCG-Banner.png'
+    },
+    {
+    'id': 2,
+    'name': 'Python Beginner',
+    'short_desc': 'Python Course for Beginner',
+    'price': 'Free',
+    'image': '../assets/pic/FREE-Python-Course-For-Beginners.png'
+    },
+    {
+    'id': 3,
+    'name': 'JavaScript Course',
+    'short_desc': 'JavaScript Full Course',
+    'price': 69.0,
+    'image': '../assets/pic/JavaScript-BCG-Banner-icons.png'
+    },
+    {
+    'id': 4,
+    'name': 'PHP Tutorial',
+    'short_desc': 'PHP programming Language',
+    'price': 89.0,
+    'image': '../assets/pic/skill-guide-php.png'
+    },
+    {
+    'id': 5,
+    'name': 'Web Development',
+    'short_desc': 'Web Development Bootcamp',
+    'price': 199.0,
+    'image': '../assets/pic/BCG-Web-Development-NEW-Banner.png'
+    },
 ];
 
 let l_courses = [
-    {'id': 1, 'name': 'Core Java', 'short_desc': 'Complete Java Full Course', 'price': 89.0, 'image': '../assets/pic/Java-BCG-Banner.png'},
-    {'id': 2, 'name': 'Python Beginner', 'short_desc': 'Python Course for Beginner', 'price': 'Free', 'image': '../assets/pic/FREE-Python-Course-For-Beginners.png'},
-    {'id': 3, 'name': 'JavaScript Course', 'short_desc': 'JavaScript Full Course', 'price': 69.0, 'image': '../assets/pic/JavaScript-BCG-Banner-icons.png'},
-    {'id': 4, 'name': 'PHP Tutorial', 'short_desc': 'PHP programming Language', 'price': 89.0, 'image': '../assets/pic/skill-guide-php.png'},
-    {'id': 5, 'name': 'Web Development', 'short_desc': 'Web Development Bootcamp', 'price': 199.0, 'image': '../assets/pic/BCG-Web-Development-NEW-Banner.png'},
+    {
+        'id': 1, 
+        'category': 'Java',
+        'name': 'Core Java', 
+        'short_desc': 'Complete Java Full Course', 
+        'price': 89.0, 
+        'image': '../assets/pic/Java-BCG-Banner.png'
+    },
+    {
+        'id': 2, 
+        'category': 'Python',
+        'name': 'Python Beginner', 
+        'short_desc': 'Python Course for Beginner', 
+        'price': 'Free', 
+        'image': '../assets/pic/FREE-Python-Course-For-Beginners.png'
+    },
+    {
+        'id': 3, 
+        'category': 'JavaScript',
+        'name': 'JavaScript Course', 
+        'short_desc': 'JavaScript Full Course', 
+        'price': 69.0, 
+        'image': '../assets/pic/JavaScript-BCG-Banner-icons.png'
+    },
+    {
+        'id': 4, 
+        'category': 'PHP',
+        'name': 'PHP Tutorial', 
+        'short_desc': 'PHP programming Language', 
+        'price': 89.0, 
+        'image': '../assets/pic/skill-guide-php.png'
+    },
+    {
+        'id': 5, 
+        'category': 'Web Development',
+        'name': 'Web Development', 
+        'short_desc': 'Web Development Bootcamp', 
+        'price': 199.0, 
+        'image': '../assets/pic/BCG-Web-Development-NEW-Banner.png'
+    },
 ];
 
 
@@ -20,12 +85,12 @@ const popular_course_wrapper = document.querySelector('.popular-course-wrapper')
 const latest_course_wrapper = document.querySelector(".latest-course-wrapper");
 const nav_links = document.querySelectorAll(".nav-link");
 const card = document.querySelectorAll(".card-img");
-
-
+const recent_page = document.querySelector(".recent-section");
+const profile_page = document.querySelector(".profile-section");
 
 
 // uploaded popular course
-const uplode_pp_course = (items) => {
+const upload_pp_course = (items) => {
     const pp_courses = items.map(e => {
         return `
             <a href="./detail.html?idd=${e.id}" class="p-card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
@@ -53,7 +118,10 @@ const uplode_pp_course = (items) => {
     .join(" ");
     popular_course_wrapper.innerHTML = pp_courses;
 }
-uplode_pp_course(courses);
+upload_pp_course(courses);
+
+// searching function
+const search = document.querySelector(".searchbar");
 
 for(let i=0; i<l_courses.length; i++){
     const course = `
@@ -91,6 +159,18 @@ nav_links.forEach(e => {
         })
         // add the active class 
         e.classList.add('active');
+        if(e.classList.contains("recent")){
+            recent_page.classList.add("active");
+            profile_page.classList.remove("active");
+        }else{
+            recent_page.classList.remove("active");
+        }
+        if(e.classList.contains("profile")){
+            recent_page.classList.remove("active");
+            profile_page.classList.add("active");
+        }else{
+            profile_page.classList.remove("active");
+        }
     })
 })
 

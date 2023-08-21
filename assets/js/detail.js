@@ -244,7 +244,7 @@ course_detail_container.innerHTML = `
                         <span>${course_detail[id].course_label}</span>
                     </div>
                     <div class="col-6 d-flex flex-column justify-content-end align-items-end price">
-                        <h5>Price: <span>${course_detail[id].prices}</span></h5>
+                        <h5>Price: <span>${course_detail[id].prices}$</span></h5>
                     </div>
                 </div>
 

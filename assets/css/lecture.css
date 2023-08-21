@@ -59,50 +59,114 @@
     border: 1px solid var(--hare);
 }
 
+/* nav link section  */
+
 .nav-link{
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: start;
     cursor: pointer;
     transition: all .2s ease-in-out;
-    font-size: var(--fs-14);
+    font-size: var(--fs-16);
     font-weight: var(--fw-semibold);
-    color: var(--eel);
+    color: var(--wolf);
+    margin-bottom: 10px;
+}
+
+.star{
+    width: var(--fs-18);
 }
 
 .nav-link:hover{
-    color: blue;    
+    color: var(--humpback);    
+}
+
+.nav-link.active{
+    border-radius: 10px;
+    background-color: var(--light-hover);
+    color: var(--humpback);
+    font-weight: var(--fw-bold);
 }
 
 .btn-back{
     position: absolute;
     bottom: 0;
     padding: 8px 25px;
-    width: 80px;
+    width: 100px;
     border: var(--eel) 1px solid ;
     border-radius: 10px;
-    font-size: var(--fs-12);
+    font-size: var(--fs-16);
     font-weight: var(--fw-medium);
     /* background-color: var(--fox); */
     color: var(--eel);
+    font-weight: var(--fw-semibold);
+}
+
+.main-section{
+    /* width: 100%; */
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--polar);
+    
 }
 
 .btn-back:hover{
     background-color: rgb(39, 38, 38);
     color: white;
 }
+
+/* this is video section  */
  .main-section .video{
+    width: 100%;
     background-color: var(--humpback);
     border: 1px solid blue;
-    height: 240px;
+    height: 50vh;
     border-radius: 10px;
+    overflow: hidden;
+}
 
+.video-part{
+    height: 10vh;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid var(--swan) !important;
+    position: relative;
+    background: var(--snow);
+    border-radius: 10px;
 }
-.main-section{
-    border: 1px solid red;
+.fa-check-circle{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    color: var(--humpback);
 }
+
+
+.video-part:hover{
+    /* transform: scale(1.01); */
+    border: 2px solid var(--wolf) !important;
+}
+
+.play-circle-icon{
+    background-color: var(--swan);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.video-part h3{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.video-part small{
+    font-size: var(--fs-14);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
+
 .category{
     margin-top: 15px;
     margin-left: 10px;
@@ -125,19 +189,77 @@
     background: var(--wolf) !important;
     color: var(--polar) !important; 
 }
-.my-swiper2{
-    overflow-x: scroll;
-    width: 1000px;
-    height: auto;
-}
+
+/* this is week title and its content */
 .content{
+    width: 100%;
+    height: 38vh;
+    /* background-color: var(--bee); */
+    display: none;
+    overflow-y: scroll;
+    border-top: 1px solid var(--swan);
+}
+.content::-webkit-scrollbar{
     display: none;
 }
 .content.active{
     display: block;
 }
+.content h5{
+    font-size: var(--fs-18);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
 button{
     outline:none;
     background: transparent;
     border:none;
+}
+
+/* this is swiper section  */
+.swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-wrapper{
+    height: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: var(--fs-14);
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* this is media screen and max width  */
+@media screen and (max-width: 678px) {
+    .main-section{
+        height: 90vh;
+    }
+    .nav-link{
+        height: 5vh;
+        width: 40px;
+    }
+    .aside{
+        height: 10vh;
+    }
+    .star{
+        width: auto;
+    }
+    .nav-link-icon{
+        transform: scale(1.5);
+    }
+
+    .main-section .video{
+        height: 35vh;
+    }
+
+    .fa-check-circle{
+        top: 5px;
+        right: 5px;
+    }
 }
