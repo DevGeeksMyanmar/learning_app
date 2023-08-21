@@ -17,8 +17,8 @@
             <div class="item-box">
                 <i class="fa-regular fa-circle-xmark"></i>
                 <div class="items">
-                    <input type="radio" name="check" id="check" class="pay">Balance
-                    <input type="radio" name="check" id="check" class="pay" selected>Credit Card
+                    <input type="radio" name="check" value="balance" class="pay check">Balance
+                    <input type="radio" name="check" value="credit" class="pay check" checked>Credit Card
                 </div> 
                 <!-- <i class="fa-regular fa-circle-xmark"></i> -->
                 <div class="input">
@@ -28,11 +28,37 @@
                     <div class="rem">
                         <input type="checkbox">Remember Me
                     </div>
+                    
+                    <div class="input1">
+                        <input type="email" placeholder="Phone Number" class="box">
+                        <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
+                        <button class="rem">Get OPT</button>
+                    </div>
+                   
+
                 </div>
                 <button class="btn">Pay Now</button>
             </div>
         </div>
     </div>
+
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".check").click(function(){
+                $checkValue = $(this).val();
+               if($checkValue == "balance"){
+                    $(".input1").addClass("d-flex");
+                    $(".input").hide();
+               }else if($checkValue == "credit"){
+                    $(".input1").hide();
+                    $(".input").show();
+               }
+            })
+        })
+    </script>
     
 </body>
 </html>
