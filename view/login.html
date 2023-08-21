@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log In</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fontawesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
         :root{
         /* primary  */
         --macaw: #1cb0f6;
@@ -56,6 +59,12 @@
         font-family: var(--font-open-sans);
     }
             body{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
                 background-color: var(--snow);
             }
     
@@ -72,7 +81,7 @@
             .header{
                 text-align: center;
                 padding-top: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
             }
     
             .log-in{
@@ -100,27 +109,30 @@
                 margin-bottom: 16px;
                 padding-left: 20px;
                 width: 350px;
-                height: 40px;
-                border: 1px solid var(--hare);
+                height: 50px;
+                border: 2px solid var(--hare);
                 border-radius: 5px;
                 background: none;
                 font-size: var(--fs-16);
                 transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+                margin-bottom: 1.5rem;
             }
 
             .user-label {
                 position: absolute;
                 left: 66px;
-                bottom: 27px;
-                color: black;
+                bottom: 34px;
+                color: var(--wolf);
                 pointer-events: none;
                 transform: translateY(1rem);
+                font-size: var(--fs-14);
+                font-weight: var(--fw-semibold);
                 transition: 150ms cubic-bezier(0.4,0,0.2,1);
             }
 
             .input:focus, input:valid {
                 outline: none;
-                border: 1px solid var(--humpback);
+                border: 2px solid var(--humpback);
             }
 
             .input:focus ~ label, input:valid ~ label {
@@ -206,9 +218,60 @@
             .login a{
                 text-decoration: none;
             }
+
+            /* forget password style  */
+            .forget-password{
+                padding: 0 3rem;
+                font-size: var(--fs-14);
+                font-weight: var(--fw-semibold);
+                color: var(--humpback);
+                text-decoration: none;
+            }
+
+            /* password  eye*/
+            .fa-eye, .fa-eye-slash{
+                position: absolute;
+                right: 13%;
+                top: 35%;
+                color: var(--hare);
+                cursor: pointer;
+            }
+            
+            .fa-eye:hover, .fa-eye-slash:hover{
+                color: var(--eel);
+            }
+
+            .fa-eye-slash.active{
+                display: none;
+            }
+
+            .fa-eye.active{
+                display: none;
+            }
+
+            /* error message box  */
+            .err-msg{
+                width: 300px;
+                height: 8vh;
+                background-color: #ff4b4b79;
+                text-align: center;
+                padding: 1rem 1rem;
+                position: absolute;
+                top: 2%;
+                border-radius: 10px;
+                color: var(--cardinal);
+                font-weight: var(--fw-bold);
+                font-size: var(--fs-16);
+            }
+
         </style>
     </head>
     <body>
+
+        <div class="err-msg">
+            <span>Email or Password is incorrect!</span>
+        </div>
+
         <div class="content">
             <!-- for header -->
             <div class="header">
@@ -222,10 +285,14 @@
                 <label class="user-label">Email</label>
             </div>
             <div class="input-group">
-                <input required="" type="password" name="text" autocomplete="off" class="input">
+                <input required="" type="password" name="text" autocomplete="off" class="input password">
                 <label class="user-label">Password</label>
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-eye-slash active"></i>
             </div>
             <!-- input-end -->
+
+            <a href="" class="forget-password">Forget Password?</a>
     
             <div  class="continue">
                 <button>Continue</button>
@@ -246,5 +313,7 @@
                 <div class="login"><a href="">Sign up</a></div>
             </div>
         </div>
+
+        <script src="../assets/js/password.js"></script>
     </body>
     </html>
