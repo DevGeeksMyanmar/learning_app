@@ -116,26 +116,19 @@ input{
     margin-top: 25px;
     height: 300px;
 }
-
-.d-flex {
-    display: flex;
-}
-.input1{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    margin-top: 25px;
-    height: 300px;
-}
 .pay{
     margin-top:40px;
     margin-left:40px;
     padding: 10px;
 }
+#pay{
+    text-decoration: none;
+    color:#05438C;
+    font-weight: bold;
+}
 .box{
     padding: 10px;
-    margin:5px;
+    margin:10px;
     border-radius: 8px;
     height:35px;
     width: 350px;
@@ -145,12 +138,20 @@ input{
 .item{
     font-size: 20px;
 }
+
+
+
 .rem{
     position: absolute;
     font-size: 15px;
     font-weight: 600;
-    color:#05438C;
-    top:340px;
+    color:white;
+    background-color: #2B70C9;
+    height: 30px;
+    width:100px;
+    border-radius: 10px;
+    border:none;
+    top:330px;
     left:360px;
 }
 .btn{
@@ -175,17 +176,4 @@ input[type="date"]{
     position: absolute;
     left:770px;
     top:10px;
-}
-.rem1{
-    position: absolute;
-    font-size: 15px;
-    font-weight: 600;
-    color:white;
-    background-color: #2B70C9;
-    height: 30px;
-    width:100px;
-    border-radius: 10px;
-    border:none;
-    top:330px;
-    left:360px;
 }
