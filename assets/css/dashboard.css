@@ -62,6 +62,7 @@
 
 /* dashboard aside  */
 .aside{
+    z-index: 999999;
     height: 100vh;
     /* background-color: red; */
     border: 1px solid var(--hare);
@@ -69,16 +70,18 @@
 
 /* logo box  */
 .logo-box{
+    z-index: 9999;
     width: 70px;
     height: 70px;
     border: none;
     border-radius: 10px;
-    background-color: var(--humpback);
+    /* background-color: var(--humpback); */
 }
 
 .logo-name{
     font-size: var(--fs-18);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
 }
 
 .nav-link{
@@ -91,6 +94,7 @@
     transition: all .2s ease-in-out;
     font-weight: var(--fw-semibold);
     border-radius: 10px;
+    z-index: 9999 !important;
 }
 
 .nav-link:hover{
@@ -399,6 +403,80 @@
     left: 0;
 }
 
+
+/* profile card  */
+.profile-card-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.profile-card{
+    width: 340px;
+    height: 70vh;
+    background-color: var(--polar);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--wolf);
+}
+
+.profile-card .img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: var(--humpback);
+}
+
+.profile-card h3{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-18);
+    margin-top: 10px;
+}
+
+.profile-card span{
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-14);
+    color: var(--wolf);
+}
+
+.profile-card button{
+    border: none;
+    margin-top: 10px;
+    padding: .2rem 1rem;
+    border-radius: 15px;
+    background: var(--macaw);
+    color: var(--snow);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-14);
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.profile-card button:hover{
+    background: var(--light-hover);
+    color: var(--wolf);
+}
+
+.profile-card .profile-settings{
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.profile-card .profile-settings span{
+    font-size: var(--fs-16);
+}
+
+.profile-card .profile-settings i{
+    font-size: var(--fs-14);
+    color: var(--wolf);
+}
+
+.profile-card .profile-settings:hover{
+    background: var(--swan);
+}
+
 @media screen and (max-width: 768px){
     .aside{
         height: 10vh;
@@ -414,5 +492,8 @@
     }
     .search-wrapper{
         width: 100%;
+    }
+    .recent-section, .profile-section{
+        height: 90vh;
     }
 }
