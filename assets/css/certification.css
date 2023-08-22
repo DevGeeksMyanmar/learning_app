@@ -154,7 +154,10 @@
 .certi-sample{
     height: 450px;
     width: 760px;
-    background-color: var(--light-hover);
+    background: url(../../assets/images/certificate/certificate-background.png );
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-left: 22px ;
     margin-top: 30px;
     padding-top: 30px;
