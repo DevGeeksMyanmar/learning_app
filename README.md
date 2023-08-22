@@ -7,16 +7,90 @@
 <br>
 
 <!-- collaborators images  -->
-<div align=center>
+<div align=center style="
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+">
 
-<!-- <div>
-<img src='./collaborators/myprofile.png' style="width: 150px; border-radius: 50%; border: 2px solid #fff">
-<h3>Hein Htet San</h3>
-</div> -->
+<!-- person one  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/Hein-HtetSan.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Hein Htet San</p>
+</div>
 
-[<img src="https://github.com/Hein-HtetSan.png"  style="width: 60px; height: 60px;"/>](https://github.com/Hein-HtetSan/learning_app.git)
+<!-- person two  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/sayrgyiwoody.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Wai Yan Tun</p>
+</div>
+
+<!-- person three  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/Lynn-Myat-Bhone.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Lynn Myat Bhone</p>
+</div>
 
 </div>
+<!-- end of collaborators  -->
+
+<!-- collaborators images  -->
+<div align=center style="
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+">
+
+<!-- person one  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/CodingByKira.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Kyaw Thuta Oo</p>
+</div>
+
+<!-- person two  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/Pyae-PhyoMaung.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Pyae Phyo Maung</p>
+</div>
+
+<!-- person three  -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<img src="https://github.com/HAstral.png"
+style="
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+">
+<p style='font-size: 16px; font-weight: bold;'>Htet Aung Hlyan</p>
+</div>
+
+</div>
+<!-- end of collaborators  -->
 
 <hr>
 <h2 style="color: violet;">Project Scope and Objectives<h3>
@@ -42,9 +116,10 @@
 
 <h3>Languages</h3>
 <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript ES6</li>
+    <li>HTML5 - HyperText Markup Language</li>
+    <li>CSS3 - Cascading Style Sheets</li>
+    <li>JavaScript ES6 - Scripting programming language</li>
+    <li>SASS - Syntactically Awesome Style Sheets</li>
 </ul>
 
 <h3>Frameworks</h3>
