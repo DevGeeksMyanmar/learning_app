@@ -30,6 +30,7 @@
                     <div class="rem">
                         <input type="checkbox">Remember Me
                     </div>
+
                 </div>
                 <div class="input1">
                     <input type="email" placeholder="Phone Number" class="box">
@@ -49,7 +50,10 @@
             $(".input1").hide();
             $(".check").click(function(){
                 $checkValue = $(this).val();
-                if($checkValue == "credit"){
+               if($checkValue == "balance"){
+                    $(".input1").show();
+                    $(".input").hide();
+               }else if($checkValue == "credit"){
                     $(".input1").hide();
                     $(".input").show();
 
