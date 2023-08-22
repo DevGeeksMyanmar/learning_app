@@ -164,18 +164,19 @@
 .certi-sample{
     border-radius: 10px;
     border: 1px solid var(--wolf);
-    height: 450px;
+    height: 448px;
     width: 760px;
-
     background: url(../../assets/images/certificate/certificate-background.png );
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 22px ;
-
-    margin-top: 30px;
     padding-top: 30px;
     padding-left: 40px;
+}
+
+.certificate-container {
+    padding-left: 22px;
+    padding-top: 33px;
 }
 
 .badge{
@@ -272,3 +273,14 @@ button{
     color: var(--polar);
     font-weight: var(--fw-bold);
 }
+
+/* for mobile responsive  */
+
+@media only screen and (max-width: 600px) {
+    .certificate-container {
+        padding-left: 0px;
+        padding-top: 0px;
+        overflow: scroll;
+    }
+}
+
