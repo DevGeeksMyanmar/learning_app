@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,300;1,400;1,900&family=REM:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Poppins:ital,wght@0,400;0,500;0,900;1,300;1,400;1,900&family=REM:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Parisienne&family=Poppins:ital,wght@0,400;0,500;0,900;1,300;1,400;1,900&family=REM:wght@600&display=swap');
+
 :root{
     /* primary  */
+
+    --primary : #7711FA;
+    --secondary : #4A87CE;   
+     --muted : #73767A;
+    --dark : #222831;
+    --white : #ffffff;
+    --light : #EEEEEE;
+
     --macaw: #1cb0f6;
     --humpback: #2b70c9;
     --beetle: #ce82ff;
@@ -159,7 +169,7 @@
 
     background: url(../../assets/images/certificate/certificate-background.png );
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-left: 22px ;
 
@@ -168,33 +178,45 @@
     padding-left: 40px;
 }
 
+.badge{
+    position: absolute;
+    right: 500px;
+}
+
+.badge img{
+    width: 180px;
+
+}
+
 .text1{
     font-family: 'Geologica', sans-serif;
+    letter-spacing: .1em;
+    font-weight: 800;
     font-size: 50px;
-    background: linear-gradient(to right, rgb(255, 68, 243), var(--beetle), var(--humpback) );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--secondary);
+
 }
 
 .text2{
+    letter-spacing: .1em;
     font-family: 'Geologica', sans-serif;
+    font-weight: 700;
     font-size: var(--fs-32);
-    background: linear-gradient(to right, rgb(255, 68, 243), var(--beetle), var(--humpback) );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--secondary);
 }
 
 .text3, .text4, .class-name{
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
+    color: var(--eel);
 }
 
 .user-name{
-    font-family: 'Geologica', sans-serif;
+    font-family: 'Parisienne', cursive;
+    font-weight: 700;
+    color: var(--primary);
     margin-top: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-size: 35px;
 }
 
@@ -205,7 +227,9 @@
 }
 
 .date{
+    color: var(--eel);
     font-family: 'Geologica', sans-serif;
+    font-weight: 600;
     font-size: 17px;
 }
 
