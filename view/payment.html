@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/payment.css">
+</head>
+<body>
+    <div class="item">
+        <div class="main">
+            <i class="fa-regular fa-credit-card"></i>
+            <h4>$89.00</h4>
+            <div class="line"></div>    
+            <div class="text">Complete Java Full Course</div>
+            <div class="item-box">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <div class="items">
+                    <input type="radio" name="check" value="balance" class="pay check">Balance
+                    <input type="radio" name="check" value="credit" class="pay check" checked>Credit Card
+                </div> 
+                <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+                <div class="input">
+                    <input type="email" placeholder="Email Address" class="box">
+                    <input type="text" name="card" id="card" placeholder="Card Number" class="box">
+                    <input type="date" name="card" id="card" placeholder="MM | YY" class="box">
+                    <div class="rem">
+                        <input type="checkbox">Remember Me
+                    </div>
+                    
+                    <div class="input1">
+                        <input type="email" placeholder="Phone Number" class="box">
+                        <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
+                        <button class="rem">Get OPT</button>
+                    </div>
+                   
+
+                </div>
+                <button class="btn">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".check").click(function(){
+                $checkValue = $(this).val();
+               if($checkValue == "balance"){
+                    $(".input1").addClass("d-flex");
+                    $(".input").hide();
+               }else if($checkValue == "credit"){
+                    $(".input1").hide();
+                    $(".input").show();
+               }
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,835 @@
+*{
+    font-family: 'Inter','Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+:root {
+    --primary : #7711FA;
+    --secondary : #4A87CE;   
+     --muted : #73767A;
+    --dark : #222831;
+    --white : #ffffff;
+    --light : #EEEEEE;
+
+    /* neutrals  */
+    --eel: #4b4b4b;
+    --wolf: #777;
+    --hare: #afafaf;
+    --swan: #e5e5e5;
+    --polar: #f7f7f7;
+    --snow: #fff;
+    --shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+    /* font family  */
+    --font-open-sans: 'Open Sans', sans-serif;
+
+    /* font size  */
+    --fs-10: 10px;
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-26: 26px;
+    --fs-28: 28px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+
+    /* font weight  */
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
+}
+
+/* navbar start  */
+.navbar .fa-solid {
+    display: none;
+}
+
+.nav-container {
+    background-color: var(--light);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav-item {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--muted);
+    text-align: center;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--primary);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a.nav-active::after {
+    width: 100%;
+}
+
+.btn-login , .btn-register {
+    transition: .5s;
+}
+
+/* navbar end  */
+
+/* learn now session start  */
+.learn-now .img-learn {
+    background: url(../images/home_images/laptop.png);
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.learn-container {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+
+.learn-container .left-div {
+    position : absolute;
+    left: 0;
+    width: 60%;
+}
+
+.learn-container .right-div {
+    position : absolute;
+    width: 724px;
+    height: 600px;
+    right: 0;
+}
+
+.learn-now .text-div {
+    padding: 120px 60px;
+}
+
+.learn-now p {
+    margin: 0;
+}
+
+.learn-now .title-1 {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.learn-now .title-2 {
+    color: var(--primary);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.learn-now .title-3 {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.learn-now .learn-desc {
+    width: 609px;
+    color:  #73767A;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.learn-now .btn-learn-now {
+    border-radius: 10px;
+    border: 2px solid var(--primary);
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.btn-learn-now:hover {
+    color : var(--white);
+    background-color: var(--primary);
+}
+
+/* learn now session end  */
+
+/* info section  start */
+
+.site-div {
+    height: 220px;
+    padding: 25px 20px;
+}
+
+.site-info {
+    background-color: var(--white) ;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-img-1 {
+    background: url("../../assets/images/icons/online-education.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-img-2 {
+    background: url("../../assets/images/icons/student.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-img-3 {
+    background: url("../../assets/images/icons/female.png");
+    width: 135px;
+    height: 135px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-heading {
+    color: var(--dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.info-text {
+    color: var(--dark);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* end of website info div  */
+
+/* start of recommend courses  */
+/* popular course  */
+.popular-course{
+    background-color: transparent;
+    padding-bottom: 25px;
+}
+
+.popular-course h4, .latest-course .title h4{
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+}
+
+.popular-course span, .latest-course .title span{
+    font-size: var(--fs-14);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
+.p-card{
+    text-decoration: none;
+    width: 360px !important;
+    height: 260px !important;
+    border-radius: 10px;
+    border: 1px solid #AFAFAF;
+    background: #FFF;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.p-card:hover{
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.42);
+}
+
+.p-card .card-img{
+    width: 340px;
+    height: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(175, 175, 175, 0.50);
+}
+
+.p-card .card-content .content h5{
+    padding-top: 10px;
+    font-weight: var(--fw-bold);
+    color: var(--eel);
+    text-decoration: none;
+    font-size: var(--fs-16);
+}
+
+.p-card .card-content .content span{
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+    font-size: var(--fs-14);
+}
+
+.p-card .card-content .price span{
+    font-weight: var(--fw-bold);
+    color: var(--humpback) !important;
+    font-size: 14px;
+}
+
+.p-card .badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    background-color: var(--swan);
+    padding: 10px 10px;
+}
+
+/* end of popular courses  */
+
+/* start of top categories  */
+
+.top-categories .category-img-container {
+    cursor: pointer;
+    height: 221px;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-categories .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: .5s;
+}
+
+.top-categories .card-title {
+    color: #FFF;
+    text-align: start;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.top-categories .card-text {
+    color: rgba(238, 238, 238, 0.80);
+    text-align: start;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(246, 246, 246, 0.6),#4A87CE);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    font-weight: 500;
+}
+
+.layer a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius:50% ;
+    text-align: center;
+}
+
+.category-img-container:hover img {
+    transform: scale(1.3);
+}
+.category-img-container:hover .layer {
+    height: 100%;
+}
+
+
+.session-title {
+    color: var(--primary);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 43px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .review-text {
+    text-align: start;
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .student-reviews .card {
+    width: 26rem;
+  }
+  .student-reviews .profile-img {
+    width: 80px;
+  }
+
+  .student-reviews .medal-img {
+    width: 60px;
+  }
+
+/* review session end  */
+
+/* start of certificate session  */
+  .img-certificate {
+    background: url("../../assets/images/home_images/personCerti.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+  }
+
+  .certificate-title {
+    color: var(--primary);
+    text-align: start;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .certificate-text {
+    color: var(--eel);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  .btn-enroll {
+    padding: 15px 20px;
+    color: var(--light, #EEE);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+/* end of certificate session  */
+
+/* start of sponsor session  */
+
+  .sponsor-title {
+    color: var(--primary);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0px;
+  }
+
+  .sponsor-container {
+    width: 80px;
+  }
+
+  .sponsor-logo {
+    width: 100%;
+
+    object-position: center;
+    object-fit: cover;
+  }
+
+
+/* end of sponsor session  */
+
+/* start of copyright session */
+  .copyright-text-1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+
+  .copyright-text-2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+/* end or copyright session  */
+
+
+/* for mobile responsive  */
+@media only screen and (max-width: 600px) {
+    
+    nav ul {
+        background: var(--secondary);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        font-size: 25px;
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+    .navbar .fa-solid {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .nav-item {
+        color: var(--white);
+        font-weight: 400;
+        width: 80px;
+    }
+
+   
+
+    .btn-login, .btn-register {
+        display: none;
+    }
+
+    .learn-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .learn-container .left-div,
+    .learn-container .right-div {
+        position: static;
+        width: 100%; 
+        height: auto;
+    }
+
+    
+    .learn-container .right-div {
+        position : static;
+        display: block;
+        width: 100%;
+        height: 300px;
+        right: 0;
+    }
+
+    .learn-now .text-div {
+        padding: 0px 20px;
+    }
+    
+    .learn-now p {
+        margin: 0;
+    }
+    
+    .learn-now .title-1 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .learn-now .title-2 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    
+    .learn-now .title-3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    .learn-now .learn-desc {
+        width: auto;
+        font-size: 14px;
+    }
+    
+    .learn-now .btn-learn-now {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 20px;
+    }
+
+    .site-div {
+        height: auto;
+        padding: 0px 15px;
+
+        padding-top: 20px;
+    }
+
+    .site-div:last-child{
+        height: auto;
+        padding: 20px 15px;
+    }
+    
+    .site-info {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-heading {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    
+    .info-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .top-categories .category-img-container {
+        height: 150px;
+    }
+
+    .top-categories .card-img-top {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center;
+    }
+
+    .top-categories .card-text {
+        font-size: 8px;
+        font-weight: 500;
+    }
+    
+    .top-categories .card-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .session-title {
+        font-size: 20px;
+    }
+
+    .img-certificate {
+        width: 300px;
+        height: 300px;
+      }
+    
+      .certificate-title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    
+      .certificate-text {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 15px;
+      }
+    
+      .btn-enroll {
+        padding: 10px 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .layer {
+        padding: 0 15px;
+    }
+    
+    .layer h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .layer p {
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .layer a {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 14px;
+        background: #fff;
+        padding :10px;
+        line-height: 22px;
+    }
+
+    .student-reviews .card {
+        width: 14rem;
+    }
+
+    .review-text {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .student-reviews .profile-img {
+        width: 60px;
+    }
+
+    .student-reviews span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .student-reviews .fa-solid {
+        font-size: 12px;
+    }
+
+    .student-reviews .medal-img {
+        width: 40px;
+    }
+
+    .sponsor-title {
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+}
