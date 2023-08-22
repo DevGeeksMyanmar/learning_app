@@ -72,22 +72,22 @@
                     <p>Congratulation on your work! Keep moving forward.</p>
                 </div>
                 <!--certi-text section end-->
-
-                <div class="certi-sample d-none d-md-block">
-                    <span class="text1">CERTIFICATE <br></span>
-                    <span class="text2">OF COMPLETION <br><br></span> 
-                    <div class="text3">This Certificate is proudly presented to </div>
-                    <div class="user-name">Kyaw Gyi <br></div>
-                    <div class="text4 fs-6">For Successfully completed the <br><span class="class-name">"Phython courses for beginners"</span> <br> </div>
-                    <div class="footer">
-                        <span class="date">Date : 21, August 2023 </span>
-                        <div class="logo-text">
-                            <span class="text-dark"><img src="../assets/images/logo/logo.png" width="50" alt=""> | COURSES</span> 
+                    <div class="certificate-container">
+                        <div id="certificate" class="certi-sample">
+                            <span class="text1">CERTIFICATE <br></span>
+                            <span class="text2">OF COMPLETION <br><br></span> 
+                            <div class="text3">This Certificate is proudly presented to </div>
+                            <div class="user-name">Kyaw Gyi <br></div>
+                            <div class="text4 fs-6">For Successfully completed the <br><span class="class-name">"Phython courses for beginners"</span> <br> </div>
+                            <div class="footer">
+                                <span class="date">Date : 21, August 2023 </span>
+                               
+                            </div>
                         </div>
                     </div>
-                </div>
                 
-                <button class="mt-3 px-3 py-1 download">Download Now</button>
+                
+                <button class="mt-3 px-3 py-1 download btn-download">Download Now</button>
                 
             </div>
             
@@ -110,7 +110,30 @@
         })
         
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
+
+    <script>
+        $(document).ready(function () {
+            $(".btn-download").click(function(){
+                html2pdf(document.getElementById("certificate"),{
+                    margin : 1,
+                    filename : `certificate.pdf`,
+                    image: { type: 'jpeg', quality: 0.98 }, // Optional: Set the image format and quality
+                    html2canvas: { scale: 2 }, // Optional: Adjust the scale for rendering the HTML to canvas
+                    jsPDF: { 
+                    unit: 'px', // Set the unit for the page size and margins to pixels
+                    format: [760, 450],
+                    orientation: 'landscape',
+                    }
+                });
+            })
+  
+    });
+        </script>
+        
 
 </body>
 </html>
