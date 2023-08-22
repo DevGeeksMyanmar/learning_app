@@ -14,6 +14,7 @@
             <h4>$89.00</h4>
             <div class="line"></div>    
             <div class="text">Complete Java Full Course</div>
+            <img classs="img" src="/learning_app/assets/images/logo/1.png" alt="">
             <div class="item-box">
                 <i class="fa-regular fa-circle-xmark"></i>
                 <div class="items">
@@ -25,17 +26,15 @@
                     <input type="email" placeholder="Email Address" class="box">
                     <input type="text" name="card" id="card" placeholder="Card Number" class="box">
                     <input type="date" name="card" id="card" placeholder="MM | YY" class="box">
+                    
                     <div class="rem">
                         <input type="checkbox">Remember Me
                     </div>
-                    
-                    <div class="input1">
-                        <input type="email" placeholder="Phone Number" class="box">
-                        <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
-                        <button class="rem">Get OPT</button>
-                    </div>
-                   
-
+                </div>
+                <div class="input1">
+                    <input type="email" placeholder="Phone Number" class="box">
+                    <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
+                    <button id="rem">Get OPT</button>
                 </div>
                 <button class="btn">Pay Now</button>
             </div>
@@ -47,14 +46,17 @@
 
     <script>
         $(document).ready(function(){
+            $(".input1").hide();
             $(".check").click(function(){
                 $checkValue = $(this).val();
-               if($checkValue == "balance"){
-                    $(".input1").addClass("d-flex");
-                    $(".input").hide();
-               }else if($checkValue == "credit"){
+                if($checkValue == "credit"){
                     $(".input1").hide();
                     $(".input").show();
+
+               }
+                else if($checkValue == "balance"){
+                    $(".input").hide();
+                    $(".input1").show();
                }
             })
         })
