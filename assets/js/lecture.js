@@ -353,27 +353,27 @@ let lecture = [
             [
                 { // video 1
                     "title": "Introduction to PHP",
-                    "link": `<iframe width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=00&end=258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+                    "link": `<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=00&end=258" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
                     "minutes": "4 min"
                 },
                 { // video 2
                     "title": "Creating necessary files and executable path",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=310&end=429" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=310&end=429" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "2 min"
                 },
                 { // video 3
                     "title": "Creating a PHP script",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=506&end=769" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=506&end=769" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "4 min"
                 },
                 { // video 4
                     "title": "Generate HTML template",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=769&end=838" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=769&end=838" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "1 min"
                 }
@@ -383,28 +383,28 @@ let lecture = [
                 { // video 1
                     "title": "Variables and Data types",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=838&end=1682" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=838&end=1682" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "14 min"
                 },
                 { // video 2
                     "title": "arithmetic",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=1682&end=2078" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=1682&end=2078" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "6 min"
                 },
                 { // video 3
                     "title": "_Get and $_Post",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=2078&end=2780" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=2078&end=2780" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "12 min"
                 },
                 { // video 4
                     "title": "Math functions",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=2780&end=3627" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=2780&end=3627" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     
                     `,
                     "minutes": "14 min"
@@ -415,35 +415,35 @@ let lecture = [
                 { // video 1
                     "title": "If statements",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=3627&end=4249" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=3627&end=4249" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "10 min"
                 },
                 { // video 2
                     "title": "Logical Operators",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=4249&end=4865" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=4249&end=4865" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "10 min"
                 },
                 { // video 3
                     "title": "Switches",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=4865&end=5388" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=4865&end=5388" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "9 min"
                 },
                 { // video 4
                     "title": "for loops",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=5388&end=5805" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=5388&end=5805" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "8 min"
                 },
                 { // video 5
                     "title": "While loops",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=5805&end=6107" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=5805&end=6107" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "5 min"
                 },
@@ -455,7 +455,7 @@ let lecture = [
                 { // video 1
                     "title": "Arrays",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=6107&end=7269" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=6107&end=7269" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "19 min"
                 },
@@ -465,28 +465,28 @@ let lecture = [
                 { // video 1
                     "title": "Functions",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=8860&end=9389" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=8860&end=9389" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "8 min"
                 },
                 { // video 2
                     "title": "String functions",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=9389&end=9870" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=9389&end=9870" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "8 min"
                 },
                 { // video 3
                     "title": "include()",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=10353&end=10763" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=10353&end=10763" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "7 min"
                 },
                 { // video 4
                     "title": "_COOKIE,_SESSION and _SERVER",
                     "link": `
-                    <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=10763&end=11807" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=10763&end=11807" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     `,
                     "minutes": "17 min"
                 },
@@ -499,21 +499,21 @@ let lecture = [
             { // video 1
                 "title": "PHP Connects to MySQL",
                 "link": `
-                <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=12367&end=13147" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=12367&end=13147" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 `,
                 "minutes": "13 min"
             },
             { // video 2
                 "title": "PHP insert into MySQL",
                 "link": `
-                <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=13147&end=13500" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=13147&end=13500" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 `,
                 "minutes": "6 min"
             },
             { // video 3
                 "title": "PHP query MySQL",
                 "link": `
-                <iframe class="video" width="560" height="315" src="https://youtu.be/zZ6vybT1HQs?t=0&si=tHKVc4zz72KBtF5q?start=13500&end=13777" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zZ6vybT1HQs?start=13500&end=13777" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 `,
                 "minutes": "5 min"
             },
@@ -538,7 +538,7 @@ const content_container = document.querySelector(".content");
 const player_wrapper = document.querySelector(".player-wrapper");
 
 
-let courseID = 0;
+let courseID = 2;
 let week = lecture[courseID].lectures;
 let week_count = week.length;
 console.log(week_count);
