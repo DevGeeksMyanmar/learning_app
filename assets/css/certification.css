@@ -62,7 +62,7 @@
 
 .nav-link{
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -152,10 +152,12 @@
 }
 
 .certi-sample{
+    border-radius: 10px;
+    border: 1px solid var(--wolf);
     height: 450px;
     width: 760px;
     background-color: var(--light-hover);
-    margin-left: 22px ;
+    margin-left: 25px ;
     margin-top: 30px;
     padding-top: 30px;
     padding-left: 40px;
@@ -232,6 +234,7 @@ button{
     border-radius: 10px;
     margin-left: 25px;
     transition: all ease-in-out .2s;
+    /* margin-bottom: 10px; */
 }
 
 .download:hover{
