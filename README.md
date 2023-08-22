@@ -14,7 +14,7 @@
 <h3>Hein Htet San</h3>
 </div> -->
 
-[<img src="https://github.com/Hein-HtetSan.png" width="60px;"/>](https://github.com/Hein-HtetSan/learning_app.git)
+[<img src="https://github.com/Hein-HtetSan.png"  style="width: 60px; height: 60px;"/>](https://github.com/Hein-HtetSan/learning_app.git)
 
 </div>
 
