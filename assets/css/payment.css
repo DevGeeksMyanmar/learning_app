@@ -165,6 +165,9 @@ input{
     font-size:20px;
     background-color: #05438C;
 }
+.btn:hover{
+    background-color: var(--macaw);
+}
 input[type="date"]{
     color:rgb(107, 106, 106);
     font-size: 16px;

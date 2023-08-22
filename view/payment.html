@@ -28,14 +28,13 @@
                     <div class="rem">
                         <input type="checkbox">Remember Me
                     </div>
-                    
-                    <div class="input1">
-                        <input type="email" placeholder="Phone Number" class="box">
-                        <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
-                        <button class="rem">Get OPT</button>
-                    </div>
                    
 
+                </div>
+                <div class="input1">
+                    <input type="email" placeholder="Phone Number" class="box">
+                    <input type="text" name="card" id="card" placeholder="Enter OPT" class="box">
+                    <button class="rem">Get OPT</button>
                 </div>
                 <button class="btn">Pay Now</button>
             </div>
@@ -47,10 +46,11 @@
 
     <script>
         $(document).ready(function(){
+            $(".input1").hide();
             $(".check").click(function(){
                 $checkValue = $(this).val();
                if($checkValue == "balance"){
-                    $(".input1").addClass("d-flex");
+                    $(".input1").show();
                     $(".input").hide();
                }else if($checkValue == "credit"){
                     $(".input1").hide();
