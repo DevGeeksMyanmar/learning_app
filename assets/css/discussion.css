@@ -57,6 +57,7 @@
 .aside{
     height: 100vh;
     border: 1px solid var(--hare);
+    z-index: 999999;
 }
 
 /* nav link section  */
@@ -104,18 +105,18 @@
     font-weight: var(--fw-semibold);
 }
 
-.main-section{
-    /* width: 100%; */
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--polar);
-    
-}
 
 .btn-back:hover{
     background-color: rgb(39, 38, 38);
     color: white;
 }
+
+#discussion{
+    /* width: 100; */
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 #discussion p{
     color: black;
     font-size: 15px;
@@ -126,7 +127,7 @@
     font-size: 25px;
 }
 .megs{
-    /* width: 100%; */
+    width: 100%;
     height: auto;
 }
 .megs .img{
@@ -139,40 +140,90 @@
 .megs .txt{
     max-width: 50%;
     height: auto;
-    border-radius: 10px;
-    border: 1px solid var(--eel);
-    box-shadow: 2px 5px 6px var(--eel);
+    border-radius: 20px 0 20px 0;
+    border: 1px solid var(--wolf);
+    box-shadow: var(--shadow);
 }
+
+.time{
+    font-size: var(--fs-12);
+    font-weight: var(--fw-semibold);
+    color: var(--wolf);
+}
+
 .section{
     width: 100%;
     position: relative;
 }
-.sent{
-    z-index: 10;
+
+.send-box{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    justify-content: space-between;
-    position: absolute;
+    left: 0;
     bottom: 0;
-}
-.sent input{
-    width: 750px;
-    height: 40px;
-    outline: none;
-    border: 1px solid var(--humpback);
-    border-radius: 5px;
-}
-.sent button{
-    font-size: 20px;
-    background-color: var(--humpback);
-    color:white;
-    border: none;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
+    z-index: 9999;
+
 }
 
-@media screen and (max-width: 376px){
+.send-box input{
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--wolf);
+    outline: none;
+    text-indent: 10px;
+    box-shadow: var(--shadow);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-semibold);
+}
+.send-box input:focus{
+    outline: 2px solid var(--humpback);
+    border: none;
+}
+
+.send-box input::placeholder{
+    font-size: var(--wolf);
+    font-weight: var(--fw-regular);
+    color: var(--swan);
+    font-size: var(--fs-12);
+}
+
+.send-box button{
+    border: 2px solid var(--humpback);
+    padding: .6rem 1.1rem;
+    border-radius: 10px;
+    background: var(--humpback);
+    color: var(--swan);
+    box-shadow: var(--shadow);
+}
+
+.send-box button:hover{
+    transform: scale(1.05);
+}
+
+.send-box-wrapper{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    #discussion{
+        height: 90vh;
+    }
+    .nav-link{
+        height: 10vh;
+    }
     .txt{
         max-width: 65%;
     }
+    .send-box{
+        bottom: 10%;
+    }
+    .send-box input{
+        width: 80%;
+    }
 }
+
