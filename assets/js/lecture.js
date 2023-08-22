@@ -43,17 +43,24 @@ let lecture = [
                 },
                 { // video 2
                     "title": "Primitive Data types",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 3
                     "title": "Reference Data types",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 4
                     "title": "Different Between Primitive and References Data types",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    `,
                     "minutes": ""
                 },
             ],
@@ -61,52 +68,72 @@ let lecture = [
             [
                 { // video 1
                     "title": "Java Language Fundamental - Flows of Control",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 2
                     "title": "Arithmetic Operations",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 3
                     "title": "Comparison Operators",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 4
                     "title": "Logical Operators",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 5
                     "title": "If Statement",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 6
                     "title": "Ternary Operator",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 7
                     "title": "Switch Statement",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 8
                     "title": "Break and Continue",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 9
                     "title": "While Loop",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 10
                     "title": "Do while Loop",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
             ],
@@ -114,7 +141,9 @@ let lecture = [
             [
                 { // video 1
                     "title": "Classes and Objects",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
             ],
@@ -122,27 +151,37 @@ let lecture = [
             [
                 { // video 1
                     "title": "Creating Classes and Objects and Using it",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 2
                     "title": "Creating Classes",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 3
                     "title": "Creating Objects",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 4
                     "title": "Priting Object Attributes",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
                 { // video 5
                     "title": "Passport Example",
-                    "link": ``,
+                    "link": `
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qgl81fPcLc8?si=yanIQxXxy_dyMUIf?start=1180&end=2055" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    `,
                     "minutes": ""
                 },
             ]
@@ -197,7 +236,7 @@ let category   = document.querySelectorAll(".category");
 content_container.querySelector("h5").textContent = `Week - 0`;
 for(let i=0; i<week[0].length; i++){
     content_container.querySelector(".video-wrapper").innerHTML += `
-                <div class="row mb-3 active video-part id-1 d-flex align-items-center justify-content-center">
+                <div class="row mb-3 video-part d-flex align-items-center justify-content-center" id="${i}">
                     <div class="col-3 col-md-1 text-align-start">
                         <img src="../assets/svg/play-circle.svg" class="play-circle-icon" alt="">
                     </div>
@@ -230,7 +269,7 @@ category.forEach(e => {
         // print the lecture
         for(let i=0; i<week[week_id].length; i++){
             content_container.querySelector(".video-wrapper").innerHTML += `
-                        <div class="row mb-3 active video-part id-1 d-flex align-items-center justify-content-center">
+                        <div class="row mb-3 video-part d-flex align-items-center justify-content-center" id="${i}">
                             <div class="col-3 col-md-1 text-align-start">
                                 <img src="../assets/svg/play-circle.svg" class="play-circle-icon" alt="">
                             </div>
@@ -244,17 +283,6 @@ category.forEach(e => {
                         </div>
             `;
         }
-        
-    })
-})
-
-//for video choosing function
-const chunk_of_video = document.querySelectorAll(".video-part");
-
-chunk_of_video.forEach(e => {
-    e.addEventListener("click", () => {
-        e.querySelector(".fa-check-circle").classList.remove("d-none");
-        console.log(e.classList)
     })
 })
 
@@ -273,3 +301,33 @@ nav_links.forEach(e => {
 backBtn.addEventListener("click", () => {
     window.location = "./dashboard.html";
 })
+
+//for video choosing function
+const chunk_of_video = document.querySelectorAll(".video-part");
+
+
+    chunk_of_video.forEach(e => {
+        e.addEventListener("click", () => {
+            e.querySelector(".fa-check-circle").classList.remove("d-none");
+            console.log(e.classList)
+        })
+    })
+
+
+// For video choosing function
+const videoWrapper = content_container.querySelector(".video-wrapper");
+
+videoWrapper.addEventListener("click", (event) => {
+    const clickedElement = event.target.closest(".video-part");
+    
+    if (clickedElement) {
+        clickedElement.querySelector(".fa-check-circle").classList.remove("d-none");
+        console.log(clickedElement.classList);
+    }
+});
+// By using this approach, you won't need to reattach event listeners every time you switch categories, and the click functionality should work consistently across dynamically loaded video lectures.
+
+
+
+
+

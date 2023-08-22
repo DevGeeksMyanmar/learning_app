@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- this is css link  -->
         <link rel="stylesheet" href="../assets/css/discussion.css">
+        link
         <!-- Link Swiper's CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />   
     </head>
@@ -25,28 +26,28 @@
                 <!-- aside nav link  -->
                 <div class="row w-100 d-flex flex-row flex-md-column align-items-center justify-content-center">
                     <div class="col-2 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link explore  px-3">
+                        <a href="./lecture.html"  class="nav-link explore  px-3 text-decoration-none">
                             <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/play-circle.svg" alt="">
                             <span class="d-none d-md-block">Current Lecture</span>
-                        </div>
+                        </a>
                     </div> 
                     <div class="col-2 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link recent active px-3">
+                        <a href="./discussion.html"  class="nav-link recent active px-3 text-decoration-none">
                             <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/chat-left-dots.svg" alt="">
                             <span class="d-none d-md-block">Dicussion</span>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-2 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link profile px-3">
+                        <a href="#"  class="nav-link profile px-3 text-decoration-none">
                             <img class="pe-3 pe-md-0 me-md-2 nav-link-icon" src="../assets/svg/globe-americas.svg" alt="">
                             <span class="d-none d-md-block">Review</span>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-2 col-md-12 mb-md-2 me-2 me-md-0">
-                        <div  class="nav-link profile px-3">
+                        <a href="certification.html" class="nav-link profile px-3 text-decoration-none">
                             <img class="pe-3 pe-md-0 me-md-2 nav-link-icon star" src="../assets/svg/star-solid.svg" alt="">
                             <span class="d-none d-md-block">Certification</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <!-- end of aside nav links  -->
@@ -67,28 +68,39 @@
             <div class="col-md-10 mt-4" id="discussion">
                 <h3>Discussion</h3>
                 <p>Keep connect with other people and instructors. Also, can ask or answer what you want <br>to know or something.</p>
-                <div class="megs d-flex">
-                    <div class="img">
 
-                    </div>
-                    <div class="section mt-4 ms-3">
-                        <div class="txt">
-
-                        </div>
-                        <div class="time mt-2">8m ago</div>
-                    </div>
-                </div>
-                <div class="megs d-flex">
-                    <div class="section ">
-                        <div class="txt mt-4 me-3" style="float: right;">
+                <!-- this is first message box  -->
+                <div class="row d-flex">
+                    <div class="col-12 megs w-100 wrapper-megs d-flex align-self-end">
+                        <div class="img">
 
                         </div>
-                        <div class="time" style="position: absolute; right: 0; bottom: 0; ">8m ago</div>
-                    </div>
-                    <div class="img">
-
+                        <div class="section mt-4 ms-3">
+                            <div class="txt p-2">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, voluptate.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, qui!
+                            </div>
+                            <div class="time mt-2">8m ago</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- this is second message box  -->
+                <div class="row megs d-flex">
+                    <div class="col-12 wrapper-megs d-flex">
+                        <div class="img">
+
+                        </div>
+                        <div class="section mt-4 ms-3">
+                            <div class="txt p-2">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, voluptate.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, qui!
+                            </div>
+                            <div class="time mt-2">8m ago</div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="sent ms-md-5">
                     <input type="text" name="" id="">
                     <button><i class="fa-solid fa-paper-plane"></i></button>
