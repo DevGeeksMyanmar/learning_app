@@ -331,5 +331,17 @@
         freeMode: true,
     });
     </script>
+        <script src="../assets/js/middleware.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.btn-signout').click(function(){
+                    localStorage.setItem('login_status',false);
+                    window.location.replace("login.html");
+                })
+            })
+        </script>
+
 </body>
 </html>
