@@ -3,6 +3,7 @@ checkLogin();
 
 function checkLogin(){
     let currentLocation = window.location.pathname;
+    // console.log(currentLocation);
     if(currentLocation != '/view/login.html' && currentLocation != '/view/signup.html' && currentLocation != "/index.html"){
         // console.log(currentLocation);
         if(localStorage.getItem('login_status') != 'true'){
