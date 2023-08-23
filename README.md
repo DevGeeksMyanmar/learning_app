@@ -1,5 +1,6 @@
 <h1 align='center' style="color: violet;">Documentation</h1>
 
+
 <!-- collaborator titles  -->
 <h3 align=center>:rocket: Collaborators :rocket:</h3>
 
@@ -15,11 +16,9 @@ justify-content: space-evenly;
 
 <!-- person one  -->
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
-<img src="https://github.com/Hein-HtetSan.png"
+<img src="https://github.com/Hein-HtetSan.png" width="100px"
 style="
-    width: 100px;
     border-radius: 50%;
-    border: 2px solid #fff;
 ">
 <p style='font-size: 16px; font-weight: bold;'>Hein Htet San</p>
 </div>
@@ -27,21 +26,19 @@ style="
 <!-- person two  -->
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
 <img src="https://github.com/sayrgyiwoody.png"
+width="100px"
 style="
-    width: 100px;
     border-radius: 50%;
-    border: 2px solid #fff;
 ">
 <p style='font-size: 16px; font-weight: bold;'>Wai Yan Tun</p>
 </div>
 
 <!-- person three  -->
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+<div>
 <img src="https://github.com/Lynn-Myat-Bhone.png"
+width="100px"
 style="
-    width: 100px;
     border-radius: 50%;
-    border: 2px solid #fff;
 ">
 <p style='font-size: 16px; font-weight: bold;'>Lynn Myat Bhone</p>
 </div>
@@ -50,11 +47,7 @@ style="
 <!-- end of collaborators  -->
 
 <!-- collaborators images  -->
-<div align=center style="
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-">
+
 
 <!-- person one  -->
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
@@ -89,7 +82,6 @@ style="
 <p style='font-size: 16px; font-weight: bold;'>Htet Aung Hlyan</p>
 </div>
 
-</div>
 <!-- end of collaborators  -->
 
 <hr>
