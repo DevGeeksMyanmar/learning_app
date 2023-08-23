@@ -10,7 +10,7 @@
     <body>
 
         <div class="err-msg">
-            <span>Email or Password is incorrect!</span>
+            <span>Please fill all input box</span>
         </div>
 
         <div class="content">
@@ -21,22 +21,22 @@
                 <div class="text">To continue, please sign up first or login.</div>
             </div>
 
-            <!-- input-start -->
-            <div class="input-group">
-                <input id="name" required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Name</label>
-            </div>
-            <div class="input-group">
-                <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Email</label>
-            </div>
-            <div class="input-group">
-                <input id="password" required="" type="password" name="text" autocomplete="off" class="input password">
-                <label class="user-label">Password</label>
-                <i class="fa-solid fa-eye"></i>
-                <i class="fa-solid fa-eye-slash active"></i>
-            </div>
-            <!-- input-end -->
+                <!-- input-start -->
+                <div class="input-group">
+                    <input id="name" required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Name</label>
+                </div>
+                <div class="input-group">
+                    <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Email</label>
+                </div>
+                <div class="input-group">
+                    <input id="password" required="" type="password" name="text" autocomplete="off" class="input password">
+                    <label class="user-label">Password</label>
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash active"></i>
+                </div>
+                <!-- input-end -->
     
             <div  class="continue">
                 <button id="btn-signup">Signup</button>
@@ -58,7 +58,6 @@
             </div>
         </div>
         <script src="../assets/js/password.js"></script>
-        <!-- <script src="../assets/js/auth.js"></script> -->
         <script>
             
         </script>
@@ -66,41 +65,30 @@
         <script>
             $(document).ready(function(){
                 $('#btn-signup').click(function(){
+                    signup();
+                })
+
+                function signup(){
                     $name = $('#name').val();
                     $email = $('#email').val();
                     $password = $('#password').val();
 
 
-                    localStorage.setItem('name',JSON.stringify($name));
-                    localStorage.setItem('email',JSON.stringify($email));
-                    localStorage.setItem('password',JSON.stringify($password));
+                    if($name && $email && $password) {
+                        localStorage.setItem('name',JSON.stringify($name));
+                        localStorage.setItem('email',JSON.stringify($email));
+                        localStorage.setItem('password',JSON.stringify($password));
 
-                    localStorage.setItem('login_status',true);
-                    window.location.replace("dashboard.html");
-
-
-
-                })
-
-                $('#btn-login').click(function(){
-                    $email = $('#email').val();
-                    $password = $('#password').val();
-
-                    // $localName = localStorage.getItem('name');
-                    $localEmail = localStorage.getItem('email');
-                    $localPassword = localStorage.getItem('password');
-                    
-                    if(JSON.parse($localEmail) == $email && JSON.parse($localPassword) == $password) {
-                        window.location.replace("dashboard.html");
-                    }
-
-                    if(localStorage.getItem('login_status') == null) {
                         localStorage.setItem('login_status',true);
+                        window.location.replace("dashboard.html");
+                    }else {
+                        $('.err-msg').show();
                     }
-                    
+                }
 
-                })
             })
         </script>
+        <script src="../assets/js/middleware.js"></script>
+
     </body>
     </html>

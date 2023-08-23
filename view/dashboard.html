@@ -66,9 +66,9 @@
                 <!-- sign out btn  -->
                 <div class="row w-100 d-none d-md-block position-absolute bottom-0 p-3">
                     <div class="col-12 d-flex align-items-center justify-content-center">
-                        <a href="../../index.html" class="btn-signout">
+                        <button class="btn-signout">
                             Sign out
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <!-- end of sign out btn  -->
@@ -331,5 +331,17 @@
         freeMode: true,
     });
     </script>
+        <script src="../assets/js/middleware.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.btn-signout').click(function(){
+                    localStorage.setItem('login_status',false);
+                    window.location.replace("login.html");
+                })
+            })
+        </script>
+
 </body>
 </html>

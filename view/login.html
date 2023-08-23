@@ -23,18 +23,18 @@
                 <div class="text">To continue, please sign up first or login.</div>
             </div>
 
-            <!-- input-start -->
-            <div class="input-group">
-                <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Email</label>
-            </div>
-            <div class="input-group">
-                <input id="password" required type="password" name="text" autocomplete="off" class="input password">
-                <label class="user-label">Password</label>
-                <i class="fa-solid fa-eye"></i>
-                <i class="fa-solid fa-eye-slash active"></i>
-            </div>
-            <!-- input-end -->
+                <!-- input-start -->
+                <div class="input-group">
+                    <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
+                    <label class="user-label">Email</label>
+                </div>
+                <div class="input-group">
+                    <input id="password" required type="password" name="text" autocomplete="off" class="input password">
+                    <label class="user-label">Password</label>
+                    <i class="fa-solid fa-eye"></i>
+                    <i class="fa-solid fa-eye-slash active"></i>
+                </div>
+                <!-- input-end -->
 
             <a href="" class="forget-password">Forget Password?</a>
     
@@ -59,30 +59,16 @@
         </div>
 
         <script src="../assets/js/password.js"></script>
-        <!-- <script src="../assets/js/auth.js"></script> -->
         
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $('#btn-signup').click(function(){
-                    $name = $('#name').val();
-                    $email = $('#email').val();
-                    $password = $('#password').val();
-
-
-                    localStorage.setItem('name',JSON.stringify($name));
-                    localStorage.setItem('email',JSON.stringify($email));
-                    localStorage.setItem('password',JSON.stringify($password));
-
-                    localStorage.setItem('login_status',true);
-                    window.location.replace("dashboard.html");
-
-
-
+                $('#btn-login').click(function(){
+                    login();
                 })
 
-                $('#btn-login').click(function(){
+                function login() {
                     $email = $('#email').val();
                     $password = $('#password').val();
 
@@ -92,15 +78,15 @@
                     
                     if(JSON.parse($localEmail) == $email && JSON.parse($localPassword) == $password) {
                         window.location.replace("dashboard.html");
+                    }else {
+                        $('.err-msg').show();
                     }
 
-                    if(localStorage.getItem('login_status') == null) {
-                        localStorage.setItem('login_status',true);
-                    }
-                    
-
-                })
+                    localStorage.setItem('login_status',true);
+                }
             })
         </script>
+        <script src="../assets/js/middleware.js"></script>
+
     </body>
     </html>
