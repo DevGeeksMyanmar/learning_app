@@ -78,11 +78,12 @@
                     
                     if(JSON.parse($localEmail) == $email && JSON.parse($localPassword) == $password) {
                         window.location.replace("dashboard.html");
+                        localStorage.setItem('login_status',true);
+
                     }else {
                         $('.err-msg').show();
                     }
 
-                    localStorage.setItem('login_status',true);
                 }
             })
         </script>
