@@ -76,6 +76,8 @@
                     localStorage.setItem('password',JSON.stringify($password));
 
                     localStorage.setItem('login_status',true);
+                    window.location.replace("dashboard.html");
+
 
 
                 })
@@ -89,7 +91,7 @@
                     $localPassword = localStorage.getItem('password');
                     
                     if(JSON.parse($localEmail) == $email && JSON.parse($localPassword) == $password) {
-                        alert('login success');
+                        window.location.replace("dashboard.html");
                     }
 
                     if(localStorage.getItem('login_status') == null) {
