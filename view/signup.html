@@ -9,59 +9,66 @@
     </head>
     <body>
 
-        <div class="err-msg">
-            <span>Please fill all input box</span>
-        </div>
+        <div class="container">
 
-        <div class="content">
-            <!-- for header -->
-            <div class="header">
-                <div class="img-container"><img src="../assets/images/logo/logo.png" width="80" alt=""></div>
-                <div class="sign-up">Sign Up</div>
-                <div class="text">To continue, please sign up first or login.</div>
-            </div>
-
-                <!-- input-start -->
-                <div class="input-group">
-                    <input id="name" required="" type="text" name="text" autocomplete="off" class="input">
-                    <label class="user-label">Name</label>
-                </div>
-                <div class="input-group">
-                    <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
-                    <label class="user-label">Email</label>
-                </div>
-                <div class="input-group">
-                    <input id="password" required="" type="password" name="text" autocomplete="off" class="input password">
-                    <label class="user-label">Password</label>
-                    <i class="fa-solid fa-eye"></i>
-                    <i class="fa-solid fa-eye-slash active"></i>
-                </div>
-                <!-- input-end -->
-    
-            <div  class="continue">
-                <button id="btn-signup">Signup</button>
-            </div>
-    
-            <div class="or">or</div>
-    
-            <div class="button-group">
-                <button class="social-link"><i class="fa-brands fa-google"></i>Google</button>
-                <button class="social-link twitter"><i class="fa-brands fa-twitter"></i>Twitter</button>
-                <button class="social-link"><i class="fa-brands fa-instagram"></i>Instagram</button>
-            </div>
+            <div class="row">
+                <div class="content">
+                    <a href="../index.html">
+                        <i class="fa-solid fa-xmark-circle position-absolute"></i>
+                    </a>
+                    <!-- for header -->
+                    <div class="header">
+                        <div class="img-container"><img src="../assets/images/logo/logo.png" width="80" alt=""></div>
+                        <div class="sign-up">Sign Up</div>
+                        <div class="text">To continue, please sign up first or login.</div>
+                    </div>
         
-            <div class="line"></div>
-    
-            <div class="footer">
-                <div>Already have an account?</div>
-                <div class="login"><a href="./login.html">Login</a></div>
+                        <!-- input-start -->
+                        <div class="input-group">
+                            <input id="name" required="" type="text" name="text" autocomplete="off" class="input">
+                            <label class="user-label">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input id="email" required="" type="text" name="text" autocomplete="off" class="input">
+                            <label class="user-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input id="password" required="" type="password" name="text" autocomplete="off" class="input password">
+                            <label class="user-label">Password</label>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-eye-slash active"></i>
+                        </div>
+                        <!-- input-end -->
+            
+                    <div  class="continue">
+                        <button id="btn-signup">Signup</button>
+                    </div>
+            
+                    <div class="or">or</div>
+            
+                    <div class="button-group">
+                        <button class="social-link"><i class="fa-brands fa-google"></i>Google</button>
+                        <button class="social-link twitter"><i class="fa-brands fa-twitter"></i>Twitter</button>
+                        <button class="social-link"><i class="fa-brands fa-instagram"></i>Instagram</button>
+                    </div>
+                
+                    <div class="line"></div>
+            
+                    <div class="footer">
+                        <div>Already have an account?</div>
+                        <div class="login"><a href="./login.html">Login</a></div>
+                    </div>
+                </div>
             </div>
+
         </div>
+        
         <script src="../assets/js/password.js"></script>
         <script>
             
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             $(document).ready(function(){
                 $('#btn-signup').click(function(){
@@ -82,7 +89,11 @@
                         localStorage.setItem('login_status',true);
                         window.location.replace("dashboard.html");
                     }else {
-                        $('.err-msg').show();
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Please fill these out first!',
+                        })
                     }
                 }
 
