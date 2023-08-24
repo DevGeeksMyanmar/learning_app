@@ -48,7 +48,7 @@
         box-sizing: border-box;
         font-family: var(--font-open-sans);
     }
-            body{
+            .container{
                 width: 100%;
                 height: 100vh;
                 display: flex;
@@ -61,17 +61,32 @@
             .content{
                 background-color: var(--polar);
                 margin: auto;
-                margin-top: 100px;
-                width: 450px;
+                /* margin-top: 100px; */
+                width: 350px;
                 border: 1px solid var(--hare);
                 border-radius: 5px;
                 box-shadow: var(--shadow);
+                position: relative;
+                height: auto;
+                padding: 1rem;
+            }
+
+            .fa-xmark-circle{
+                position: absolute;
+                font-size: var(--fs-24);
+                cursor: pointer;
+                right: 9px;
+                top: 9px;
+                color: var(--wolf);
+            }
+            .fa-xmark-circle:hover{
+                color: var(--cardinal);
             }
     
             .header{
                 text-align: center;
-                padding-top: 20px;
-                margin-bottom: 2rem;
+                /* padding-top: 20px; */
+                /* margin-bottom: 2rem; */
             }
     
             .log-in{
@@ -98,19 +113,19 @@
                 margin: auto;
                 margin-bottom: 16px;
                 padding-left: 20px;
-                width: 350px;
+                width: 90%;
                 height: 50px;
                 border: 2px solid var(--hare);
                 border-radius: 5px;
                 background: none;
                 font-size: var(--fs-16);
                 transition: border 150ms cubic-bezier(0.4,0,0.2,1);
-                margin-bottom: 1.5rem;
+                /* margin-bottom: 1.5rem; */
             }
 
             .user-label {
                 position: absolute;
-                left: 66px;
+                left: 40px;
                 bottom: 34px;
                 color: var(--wolf);
                 pointer-events: none;
@@ -152,22 +167,23 @@
             }
     
             .button-group{
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
             }
             
             .or{
                 text-align: center;
-                margin-top: 13px;
-                margin-bottom: 13px;
+                padding: .7rem 0;
             }
     
             .social-link{
                 background-color: var(--swan);
                 font-weight: var(--fw-medium);
-                width: 110px;
+                width: 100px;
                 height: 35px;
-                margin-bottom: 18px;
+                /* margin-bottom: 18px; */
                 border: 1px solid var(--hare);
                 border-radius: 6px;
             }
@@ -187,9 +203,10 @@
     
             .line{
                 margin: auto;
-                margin-bottom: 22px;
+                /* margin-bottom: 22px; */
                 width: 60%;
                 height: 1px;
+                margin-top: 1rem;
                 background-color: var(--swan);
             }
     
@@ -197,7 +214,7 @@
                 font-size: var(--fs-14);
                 font-weight: var(--fw-medium);
                 text-align: center;
-                margin-bottom: 50px;
+                /* margin-bottom: 50px; */
             }
 
     
@@ -207,7 +224,7 @@
 
             /* forget password style  */
             .forget-password{
-                padding: 0 3rem;
+                padding: 0 1rem;
                 font-size: var(--fs-14);
                 font-weight: var(--fw-semibold);
                 color: var(--humpback);
@@ -217,7 +234,7 @@
             /* password  eye*/
             .fa-eye, .fa-eye-slash{
                 position: absolute;
-                right: 13%;
+                right: 10%;
                 top: 35%;
                 color: var(--hare);
                 cursor: pointer;
@@ -233,20 +250,4 @@
 
             .fa-eye.active{
                 display: none;
-            }
-
-            /* error message box  */
-            .err-msg{
-                display: none;
-                width: 300px;
-                height: 8vh;
-                background-color: var(--cardinal);
-                text-align: center;
-                padding: 1rem 1rem;
-                position: absolute;
-                top: 2%;
-                border-radius: 10px;
-                color: #fff;
-                font-weight: var(--fw-bold);
-                font-size: var(--fs-16);
             }
