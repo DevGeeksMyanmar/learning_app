@@ -119,26 +119,23 @@ nav ul li a.nav-active::after {
 
 /* navbar end  */
 .learn-container{
-    padding: 80px 0px;
-    width: 100%;
+    height: 600px;
+
 
 }
 
 #img_1{
     background-color: var(--eel);
-    width:200px;
     height:150px;
     border-radius: 10px;
 }
 #img_2{
     background-color: var(--eel);
-    width: 200px;
     height: 150px;
     border-radius: 10px;
 }
 #img_3{
     background-color: var(--eel);
-    width: 416px;
     height: 150px;
     border-radius: 10px;
 }
@@ -227,5 +224,13 @@ nav ul li a.nav-active::after {
         color: var(--white);
         font-weight: 400;
         width: 80px;
+    }
+
+    .learn-container {
+        height: 400px;
+    }
+
+    .btn-login, .btn-register {
+        display: none;
     }
 }

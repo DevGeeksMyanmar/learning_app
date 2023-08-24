@@ -55,12 +55,12 @@
                 </div>
                 <!-- end of aside nav links  -->
 
-                <!-- back btn  -->
+                <!-- back btn  -->  
                 <div class="row w-100 d-none d-md-block position-absolute bottom-0 p-3">
                     <div class="col-12 d-flex align-items-center justify-content-center">
-                        <button class="btn-back mb-md-3">
+                        <a href="./dashboard.html" class="btn-back mb-md-3">
                             Back
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <!-- end of back btn  -->
@@ -82,7 +82,7 @@
                             <div class="user-name">  <br></div>
                             <div class="text4 fs-6">For Successfully completed the <br><span class="class-name">"Sayrgyi course "</span> <br> </div>
                             <div class="footer">
-                                <span class="date">Date : 21, August 2023 </span>
+                                <span class="date"></span>
                                
                             </div>
                         </div>
@@ -139,11 +139,19 @@
 
         $(document).ready(function(){
             $userName = localStorage.getItem('name');
-                if($userName) {
-                    $userName = JSON.parse($userName);
-                    // alert($userName);
-                    $('.user-name').text($userName);
-                }
+            if($userName) {
+                $userName = JSON.parse($userName);
+                $('.user-name').text($userName);
+            }
+
+            // get current date the month names 
+            $monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
+            $currentDate = new Date();
+            $day = $currentDate.getDate();
+            $month = $currentDate.getMonth();
+            $year = $currentDate.getFullYear();
+            $date = `Date : ${$day}, ${$monthNames[$month]} ${$year}`;
+            $('.date').text($date);
         })
 
         </script>
