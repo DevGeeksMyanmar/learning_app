@@ -6,12 +6,12 @@
 <!-- collaborators  -->
 <div align=center>
 
-|Hein Htet San|Wai Yan Tun|Lynn Myat Bhone|
+|:star: Hein Htet San :star:|:star: Wai Yan Tun :star:|:star: Lynn Myat Bhone :star:|
 |-------|------|------|
 |<img src='https://github.com/Hein-HtetSan.png' width="100px">|<img src="https://github.com/sayrgyiwoody.png" width='100px'>|<img src='https://github.com/Lynn-Myat-Bhone.png' width="100px">|
-|[**Follow**](https://github.com/Hein-HtetSan) :star:|[**Follow**](https://github.com/sayrgyiwoody)|[**Follow**](https://github.com/Lynn-Myat-Bhone)|
+|[**Follow**](https://github.com/Hein-HtetSan) |[**Follow**](https://github.com/sayrgyiwoody)|[**Follow**](https://github.com/Lynn-Myat-Bhone)|
 
-|Kyaw Thuta Oo|Pyae Phyo Maung|Htet Aung Hlyan|
+|:star: Kyaw Thuta Oo :star:|:star: Pyae Phyo Maung :star:|:star: Htet Aung Hlyan :star:|
 |-------|------|------|
 |<img src='https://github.com/CodingbyKira.png' width="100px">|<img src="https://github.com/Pyae-PhyoMaung.png" width='100px'>|<img src='https://github.com/HAstral.png' width="100px">|
 |[**Follow**](https://github.com/CodingbyKira)|[**Follow**](https://github.com/Pyae-PhyoMaung)|[**Follow**](https://github.com/HAstral)|
