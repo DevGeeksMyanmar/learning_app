@@ -44,6 +44,13 @@
 *{
     font-family: var(--font-open-sans);
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .item{
     display: flex;
     justify-content: center;
@@ -61,13 +68,11 @@
 }
 
 .fa-credit-card{
-    margin-left:15px;
-    margin-top:15px;
     color: #FFF; 
     font-size: 40px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    /* margin-top: -10px; */
+    margin-left: 10px;
 }
 
 h4{
@@ -85,7 +90,7 @@ h4{
     left:10px;
     top:80px;
     height:5px;
-    border-radius:2px;
+    border-radius:10px;
     background-color: white;
 }
 
@@ -104,10 +109,20 @@ h4{
     height: 500px;
     border-radius: 0px 12px 12px 0px;
     background:#e9e8e8;
+    margin-bottom: -10%;
+    /* padding: ; */
 }
+
+.items{
+    font-size: var(--fs-20);
+    font-weight: var(--fw-semibold);
+    color: var(--eel);
+}
+
 input{
     border:none; 
 }
+
 .input{
     display: flex;
     justify-content: center;
@@ -116,6 +131,22 @@ input{
     margin-top: 25px;
     height: 300px;
 }
+
+.input input{
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 2px solid var(--swan);
+}
+
+.input input:focus{
+    border: 2px solid var(--humpback);
+}
+
+.input input[type=checkbox]{
+    width: 15px;
+}
+
 img{
     position: absolute;
     top:380px;
@@ -131,11 +162,24 @@ img{
     margin-top: 25px;
     height: 300px;
 }
+
+.input1 input{
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 2px solid var(--swan);
+}
+
+.input1 input:focus{
+    border: 2px solid var(--humpback);
+}
+
 .pay{
     margin-top:40px;
     margin-left:40px;
     padding: 10px;
 }
+
 .box{
     padding: 10px;
     margin:5px;
@@ -149,19 +193,21 @@ img{
     font-size: 20px;
 }
 .rem{
+    display: flex;
+    align-items: center;
     position: absolute;
     font-size: 15px;
     font-weight: 600;
     color:#05438C;
-    top:340px;
-    left:360px;
+    top:320px;
+    left:20px;
 }
 .btn{
     text-align: center;
     height: 40px;
     width:300px;
     margin-top: 28px;
-    margin-left: 110px;
+    margin-left: 25px;
     border-radius: 10px;
     border:none;
     color:#fff;
@@ -182,7 +228,32 @@ input[type="date"]{
     position: absolute;
     left:770px;
     top:10px;
+    z-index: 99999;
 }
+
+.mark2{
+    position: absolute;
+    /* right: 10px !important; */
+    top: -10px;
+    left:  95% !important;
+    font-size: var(--fs-26);
+    cursor: pointer;
+}
+
+.mark2:hover{
+    color: var(--cardinal);
+}
+
+.total{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-bold);
+    color: var(--humpback);
+    left: 100px;
+}
+
 #rem{
     position: absolute;
     font-size: 15px;
@@ -193,8 +264,8 @@ input[type="date"]{
     width:100px;
     border-radius: 10px;
     border:none;
-    top:330px;
-    left:360px;
+    top:320px;
+    left:20px;
 }
 .rem1{
     position: absolute;
@@ -208,4 +279,70 @@ input[type="date"]{
     border:none;
     top:330px;
     left:360px;
+}
+
+.rem2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 310px;
+    top: 330px;
+    
+}
+
+#rem222{
+    position: absolute;
+    left: 310px;
+    top: 300px;
+    border: none;
+    font-size: var(--fs-14);
+    font-weight: var(--fw-semibold);
+    color: var(--polar);
+    background-color: var(--humpback);
+    padding: 10px 20px;
+}
+
+#rem222:hover{
+    background-color: var(--light-hover);
+    color: var(--humpback);
+}
+
+.rem2 span{
+    color: var(--humpback);
+    font-size: var(--fs-18) !important;
+    font-weight: var(--fw-semibold);
+}
+
+
+@media screen and (max-width: 768px){
+    .main{
+        width: auto;
+    }
+    .item-box{
+        border-radius: 10px;
+        width: 350px;
+    }
+    .rem{
+        /* position: absolute; */
+        font-size: 15px;
+        font-weight: 600;
+        color:#05438C;
+        /* top:340px; */
+        /* left:360px; */
+    }
+    .btn{
+        text-align: center;
+        height: 40px;
+        width:300px;
+        /* margin-top: 28px; */
+        /* margin-left: 110px; */
+        border-radius: 10px;
+        border:none;
+        color:#fff;
+        font-size:20px;
+        background-color: #05438C;
+    }
 }
