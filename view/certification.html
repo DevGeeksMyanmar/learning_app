@@ -132,14 +132,20 @@
                     }
                 });
 
-                $userName = localStorage.getItem('name');
-                if($userName) {
-                    $userName = JSON.parse($userName);
-                    $('.user-name').text($userName);
-                }
+                
             })
   
-    });
+        });
+
+        $(document).ready(function(){
+            $userName = localStorage.getItem('name');
+                if($userName) {
+                    $userName = JSON.parse($userName);
+                    // alert($userName);
+                    $('.user-name').text($userName);
+                }
+        })
+
         </script>
         <script src="../assets/js/middleware.js"></script>
         
