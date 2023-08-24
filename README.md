@@ -83,10 +83,11 @@ Deployment - [Demo](https://devgeeksmyanmar.github.io/learning_app/#)
 
 <h3>Languages</h3>
 <ul>
-    <li>HTML5 - HyperText Markup Language</li>
-    <li>CSS3 - Cascading Style Sheets</li>
-    <li>JavaScript ES6 - Scripting programming language</li>
-    <li>SASS - Syntactically Awesome Style Sheets</li>
+    <li><b>HTML5</b> - HyperText Markup Language</li>
+    <li><b>CSS3</b> - Cascading Style Sheets</li>
+    <li><b>JavaScript ES6</b> - Scripting programming language</li>
+    <li><b>SASS</b> - Syntactically Awesome Style Sheets</li>
+    <li><b>JQuery</b> - JavaScript Library</li>
 </ul>
 
 <h3>Frameworks</h3>
