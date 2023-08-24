@@ -59,6 +59,29 @@
     /* overflow-x: hidden; */
 }
 
+.back-btn-wrapper{
+    width: auto;
+    z-index: 9999999;
+    background-color: var(--cardinal);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    height: auto;
+    padding: .4rem .8rem;
+    color: var(--polar);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-weight: var(--fw-semibold);
+}
+
+.back-btn-wrapper:hover{
+    background: var(--polar);
+    color: var(--cardinal);
+    border: 2px solid var(--cardinal);
+}
+
 
 /* dashboard aside  */
 .aside{
@@ -235,8 +258,13 @@
 
 /* popular course  */
 .popular-course{
-    height: 50vh;
+    height: auto;
     background-color: transparent;
+}
+
+.swipper-wrapper{
+    width: 100%;
+    height: auto !important;
 }
 
 .popular-course h4, .latest-course .title h4{
@@ -349,6 +377,10 @@
     height: 100%;
   }
 
+  .mySwiper{
+    height: auto !important;
+  }
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -383,6 +415,8 @@
 .recent-section.active, .profile-section.active{
     transform: translateY(0%);
 }
+
+
 
 /* progress bar  */
 .myprogressbar{

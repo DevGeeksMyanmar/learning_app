@@ -11,9 +11,9 @@
         // learn now session scroll
 
         ScrollReveal().reveal('nav ul,.sponsor-title',{delay:500 , origin : 'top',interval : 100,distance:'50px'}); 
-        ScrollReveal().reveal('.title-1,.title-2,.title-3,.learn-desc,.btn-learn-now',{ delay : 500 , origin : 'left',interval : 200});
+        ScrollReveal().reveal('.title-1,.title-2,.title-3,.learn-desc,.btn-learn-now,.contact-left',{ delay : 500 , origin : 'left',interval : 200});
         ScrollReveal().reveal('.img-learn,.session-popular .title',{delay : 700 , origin : 'bottom',distance : '50px'});
-        ScrollReveal().reveal('.btn-auth,.session-popular .swiper',{delay : 600 , origin : 'right',mobile:false});
+        ScrollReveal().reveal('.btn-auth,.session-popular .swiper,.contact-right',{delay : 600 , origin : 'right',mobile:false});
         ScrollReveal().reveal('.navbar-brand ,.session-title,.img-certificate',{delay : 700 , origin : 'left'});
         ScrollReveal().reveal('.site-div',{delay : 500 , origin : 'bottom'})
         ScrollReveal().reveal('.session-info .bg-secondary,.copyright-text-1,.copyright-text-2',{delay : 800 , origin : 'bottom',distance:'50px'});
@@ -21,7 +21,7 @@
         ScrollReveal().reveal('.review-box,.certificate-title,.certificate-text,.btn-enroll',{delay : 700 , origin:'right',interval:100,mobile:false});
         ScrollReveal().reveal('.sponsor-container',{delay:500 , distance:'20px', opacity: 0,interval : 100}); 
 
-        ScrollReveal().reveal('.btn-auth,.session-popular .swiper',{delay : 600 , origin : 'bottom',distance:'50px',desktop:false});
+        ScrollReveal().reveal('.btn-auth,.session-popular .swiper,.contact-right',{delay : 600 , origin : 'bottom',distance:'50px',desktop:false});
         ScrollReveal().reveal('.review-box,.certificate-box',{delay : 700 , origin:'bottom',distance:'50px',interval:100,desktop:false});
 
         ; 

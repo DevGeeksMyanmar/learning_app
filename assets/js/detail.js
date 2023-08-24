@@ -296,7 +296,7 @@ course_detail_container.innerHTML = `
                     <div class="col-12">
                         <h4 class="mb-4">Modules in this course!</h4>
                         
-                        <div class="course-models-wrapper-container"></div>
+                        <div class="row course-models-wrapper-container"></div>
                         
                     
                     </div>
@@ -351,14 +351,14 @@ let modules_course = course_detail[id].modules;
 let count = 0;
 for(let j=0; j<modules_course.length; j++){
     modules_of_course.innerHTML += `
-    <div class="row mb-2 course-modules-wrapper">
-        <div class="col-1 list-number">
+    
+        <div class="col-2 col-md-1 list-number">
             <span class="me-2">${count++}</span>
         </div>
-        <div class="col-11 what-will-learn2">
+        <div class="col-10 col-md-11 what-will-learn2">
             <span>${course_detail[id].modules[j]}</span>
         </div>
-    </div>
+    
     `;
 }
 
