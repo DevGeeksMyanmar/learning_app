@@ -36,7 +36,7 @@ Deployment - [Demo](https://devgeeksmyanmar.github.io/learning_app/#)
 **Analyzing App Idea** :chart:
 > The idea of project intend to increase demand for accessible and hight-quality learning opportunity. Our team want to provide a platform where people can easily access varitey of courses and gains skills. So, we decided to build a user-friendly learning web app.
 
-**Research** :paper:
+**Research** ⌛
 > We did a lot of research on the internet. Inspiring the learning platform like Udemy, Coursea, Freecodecamp and so on. We also considered the best user experience ever.
 
 **Sketch** :pen:
