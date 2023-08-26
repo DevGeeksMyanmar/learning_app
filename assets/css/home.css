@@ -861,7 +861,7 @@ nav ul li a.nav-active::after {
             transform: translateY(10px); /* Start and end at the bottom position */
         }
         50% {
-            transform: translateY(-20px); /* Move to the top position at 50% of the animation */
+            transform: translateY(-10px); /* Move to the top position at 50% of the animation */
         }
     }
 
