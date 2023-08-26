@@ -141,7 +141,7 @@
 
         .input:focus ~ label, input:valid ~ label {
             transform: translateY(-6%) scale(0.8);
-            background-color: var(--polar);
+            background-color: #fff;
             padding: 0.2em;
             color: var(--humpback);
         }
