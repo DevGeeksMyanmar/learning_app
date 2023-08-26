@@ -17,7 +17,7 @@
         ScrollReveal().reveal('.navbar-brand ,.session-title,.img-certificate',{delay : 700 , origin : 'left'});
         ScrollReveal().reveal('.site-div',{delay : 500 , origin : 'bottom'})
         ScrollReveal().reveal('.session-info .bg-secondary,.copyright-text-1,.copyright-text-2',{delay : 800 , origin : 'bottom',distance:'50px'});
-        ScrollReveal().reveal('.category-box',{delay : 600 , origin:'top',interval:100,});
+        ScrollReveal().reveal('.category-box',{delay : 600 , origin:'bottom',interval:100,});
         ScrollReveal().reveal('.review-box,.certificate-title,.certificate-text,.btn-enroll,.img-learn',{delay : 700 , origin:'right',interval:100,mobile:false});
         ScrollReveal().reveal('.sponsor-container',{delay:500 , distance:'20px', opacity: 0,interval : 100}); 
 
