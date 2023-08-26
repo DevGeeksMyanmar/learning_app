@@ -257,6 +257,7 @@ button{
     border:none;
 }
 .download{
+    padding: 15px 20px;
     outline:none;
     font-weight: var(--fw-bold);
     background: transparent;
