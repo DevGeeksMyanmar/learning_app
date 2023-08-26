@@ -371,14 +371,6 @@ nav ul li a.nav-active::after {
     font-size: 14px;
 }
 
-.p-card .badge{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 34px;
-    background-color: var(--swan);
-    padding: 10px 10px;
-}
 
 /* end of popular courses  */
 
@@ -520,6 +512,10 @@ nav ul li a.nav-active::after {
 
   .student-reviews .medal-img {
     width: 60px;
+  }
+
+  .review-box {
+    cursor: pointer;
   }
 
 /* review session end  */
@@ -864,5 +860,34 @@ nav ul li a.nav-active::after {
             transform: translateY(-10px); /* Move to the top position at 50% of the animation */
         }
     }
+
+    .p-card{
+        width: 260px !important;
+        height: 220px !important;
+        padding: 10px 20px !important;
+    }
+    
+    
+    .p-card .card-img{
+        width: 240px;
+        height: 120px;
+    }
+    
+    .p-card .card-content .content h5{
+        font-size: var(--fs-14);
+    }
+    
+    .p-card .card-content .content span{
+        font-weight: var(--fw-semibold);
+        color: var(--wolf);
+        font-size: var(--fs-12);
+    }
+    
+    .p-card .card-content .price span{
+        font-weight: var(--fw-bold);
+        color: var(--humpback) !important;
+        font-size: 14px;
+    }
+    
 
 }
