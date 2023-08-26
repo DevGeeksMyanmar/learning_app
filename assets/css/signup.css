@@ -59,7 +59,6 @@
         }
 
         .content{
-            background-color: var(--polar);
             margin: auto;
             /* margin-top: 100px; */
             width: 100%;
@@ -180,7 +179,8 @@
         }
 
         .social-link{
-            background-color: var(--swan);
+            cursor: pointer;
+            background-color: #fff;
             font-weight: var(--fw-medium);
             width: 100px;
             height: 35px;
