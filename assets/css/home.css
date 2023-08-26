@@ -121,13 +121,34 @@ nav ul li a.nav-active::after {
 
 /* learn now session start  */
 .learn-now .img-learn {
-    background: url(../images/home_images/laptop.png);
+    background: url(../images/home_images/laptop-bg.png);
     background-position: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
 }
+
+.learn-now .img-learn-2 {
+    background: url(../images/home_images/laptop-cup.png);
+    background-position: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: moveUpDown 4s linear infinite;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(10px); /* Start and end at the bottom position */
+    }
+    50% {
+        transform: translateY(-30px); /* Move to the top position at 50% of the animation */
+    }
+}
+  
 
 .learn-container {
     position: relative;
@@ -835,6 +856,13 @@ nav ul li a.nav-active::after {
         font-weight: 600;
       }
 
-      
+      @keyframes moveUpDown {
+        0%, 100% {
+            transform: translateY(10px); /* Start and end at the bottom position */
+        }
+        50% {
+            transform: translateY(-20px); /* Move to the top position at 50% of the animation */
+        }
+    }
 
 }
