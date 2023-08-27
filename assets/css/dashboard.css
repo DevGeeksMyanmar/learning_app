@@ -182,7 +182,9 @@
     height: 55px;
     border: none;
     border-radius: 50%;
-    background-color: var(--humpback);
+    background: url("../../assets/images/avatar/user.png");
+    background-position: center;
+    background-size: cover
 }
 
 .username{

@@ -137,7 +137,9 @@
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    background-color: var(--humpback);
+    background: url("../../assets/images/avatar/user.png");
+    background-position: center;
+    background-size: cover;
 }
 .userInfo .time{
     color: var(--macaw);

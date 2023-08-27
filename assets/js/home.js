@@ -18,11 +18,13 @@ $(document).ready(function(){
     courses.forEach(function(c){
     $(".popular-course-wrapper").append(`
     <a href="" class="p-card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
-        <div class="card-img mb-2" 
-        style="background: url(${c.image});
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;"></div>
+        <div class="popular-img-container">
+            <div class="card-img mb-2" 
+            style="background: url(${c.image});
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;"></div>
+        </div>
 
         <div class="w-100 card-content d-flex align-items-center justify-content-between">
             <div class="content d-flex flex-column align-items-start justify-content-center">
@@ -34,8 +36,7 @@ $(document).ready(function(){
             </div>
         </div>
 
-        <!-- badge  -->
-        <div class="badge"><img src="../../assets/svg/star-solid.svg" alt=""></div>
+        
     </a>
 `);
     })
