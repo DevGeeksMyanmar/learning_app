@@ -75,6 +75,10 @@
     margin-bottom: 10px;
 }
 
+.video-part h3{
+    text-align: start !important;
+}
+
 .star{
     width: var(--fs-18);
 }
@@ -262,5 +266,8 @@ button{
     .fa-check-circle{
         top: 5px;
         right: 5px;
+    }
+    .content{
+        height: 42vh;
     }
 }
