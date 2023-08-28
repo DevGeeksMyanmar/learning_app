@@ -1,4 +1,5 @@
 *{
+    
     font-family: 'Inter','Open Sans', sans-serif;
 }
 
@@ -209,8 +210,27 @@ nav ul li a.nav-active::after {
 
 /* end of goal  */
 
+.team .image-container {
+    margin: 0px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.team .image-container:hover {
+   transform: translateY(-10px);
+}
 .team img {
+    border: 3px solid var(--dark);
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-container {
+    height: 800px;
 }
 
 /* for mobile responsive  */
@@ -257,7 +277,7 @@ nav ul li a.nav-active::after {
         width: 80px;
     }
 
-    .learn-container {
+    .about-container {
         height: 400px;
     }
 
@@ -268,18 +288,31 @@ nav ul li a.nav-active::after {
     
     .goals .text-container {
         padding: 20px;
+        padding-bottom: 40px;
     }
 
     .goals .goals-img-container {
         padding: 20px;
+        padding-bottom: 0px;
     }
 
     .goals {
         flex-direction: column-reverse;
     }
 
-    .team img {
-        width:  60px;
-        padding: 5px;
+    .team .image-container {
+        margin: 0px 5px;
     }
+
+    .team img {
+        border: 1.5px solid var(--dark);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .team .image-container:hover {
+        transform: translateY(-5px);
+     }
+    
 }
