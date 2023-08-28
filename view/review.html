@@ -57,9 +57,9 @@
                 <!-- back btn  -->
                 <div class="row w-100 d-none d-md-block position-absolute bottom-0 p-3">
                     <div class="col-12 d-flex align-items-center justify-content-center">
-                        <a href="./dashboard.html" class="btn-back mb-md-3">
+                        <button class="btn-back mb-md-3 text-decoration-none text-align-center ">
                             Back
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <!-- end of back btn  -->
@@ -80,7 +80,7 @@
                             </div>
                             <div class="body ms-3 mt-3">
                                 <div class="userTitle d-flex">
-                                    <span>user name</span>
+                                    <span class="user-name"></span>
                                     <div class="time ms-2">8 mins ago</div>
                                 </div>
                                 <div class="star mt-2 mb-2  d-flex">
@@ -98,6 +98,7 @@
 
             </div>
 
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <!-- script  -->
             <script>
 
@@ -112,9 +113,24 @@
                         e.classList.add('active');
                     })
                 })
+
+                $userName = localStorage.getItem('name');
+                if($userName) {
+                    $userName = JSON.parse($userName);
+                    $('.user-name').text($userName);
+                }
                 
             </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+            <script>
+                $(document).ready(function(){
+                    $('.btn-back').click(function(){
+                        // localStorage.setItem('login_status',false);
+                        window.location.replace("dashboard.html");
+                    })
+                })
+            </script>
             <!-- review end --> 
         </div>
     </div>

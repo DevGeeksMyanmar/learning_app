@@ -319,7 +319,7 @@ course_detail_container.innerHTML = `
                 </div>
                 <div class="mb-3"></div>
 
-                <a href="./payment.html?id=${id+1}" class="enroll me-3">Enroll Now</a>
+                <a href="./payment.html?id=${id+1}" class="enroll me-3 text-decoration-none ">Enroll Now</a>
                 <button class="back">Back</button>
 
                 <div class="mb-5"></div>
