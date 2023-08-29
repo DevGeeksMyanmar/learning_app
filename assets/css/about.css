@@ -1,4 +1,5 @@
 *{
+    
     font-family: 'Inter','Open Sans', sans-serif;
 }
 
@@ -153,13 +154,7 @@ nav ul li a.nav-active::after {
     box-shadow: 2px 6px 3px var(--eel);
     
 }
-.team-members img{
-    width: 100px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: var(--eel);
-}
+
 /* start of copyright session */
 .copyright-text-1 {
     color: #FFF;
@@ -181,6 +176,62 @@ nav ul li a.nav-active::after {
   }
 
 /* end or copyright session  */
+
+/* goal  */
+
+
+
+.goals .text-container {
+    padding: 140px;
+    padding-right: 0px;
+}
+
+.goals .goals-img-container {
+    padding: 140px;
+}
+
+.goal .goal-title {
+    color: var(--dark);
+    font-family: Inter;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.goal p {
+    color: var(--secondary, #73767A);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* end of goal  */
+
+.team .image-container {
+    margin: 0px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.team .image-container:hover {
+   transform: translateY(-10px);
+}
+.team img {
+    border: 3px solid var(--dark);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-container {
+    height: 800px;
+}
 
 /* for mobile responsive  */
 @media only screen and (max-width: 600px) {
@@ -226,11 +277,42 @@ nav ul li a.nav-active::after {
         width: 80px;
     }
 
-    .learn-container {
+    .about-container {
         height: 400px;
     }
 
     .btn-login, .btn-register {
         display: none;
     }
+
+    
+    .goals .text-container {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .goals .goals-img-container {
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .goals {
+        flex-direction: column-reverse;
+    }
+
+    .team .image-container {
+        margin: 0px 5px;
+    }
+
+    .team img {
+        border: 1.5px solid var(--dark);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .team .image-container:hover {
+        transform: translateY(-5px);
+     }
+    
 }
