@@ -344,9 +344,13 @@ let lecture = [
            
         ]
     },
+    //JavaScript
+    {
+
+    },
      //PHP
      {
-        "course_id": 3,
+        "course_id": 4,
         "lectures": 
         [
             //week 1
@@ -523,12 +527,13 @@ let lecture = [
         ]
     
     },
+    // web development
+    {
 
+    }
 
 
 ]
-
-
 
 let content= document.querySelectorAll(".content");
 const nav_links = document.querySelectorAll(".nav-link");
@@ -538,7 +543,7 @@ const content_container = document.querySelector(".content");
 const player_wrapper = document.querySelector(".player-wrapper");
 
 
-let courseID = 2;
+let courseID = localStorage.getItem("current_course_id");
 let week = lecture[courseID].lectures;
 let week_count = week.length;
 console.log(week_count);
