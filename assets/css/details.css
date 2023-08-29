@@ -164,7 +164,10 @@
 .insturct-img{
     width: 100px;
     height: 100px;
-    background: var(--bee);
+    background: url(../images/instructor/poukPhaw.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
 }
 
