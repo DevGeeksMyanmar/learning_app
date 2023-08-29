@@ -150,6 +150,47 @@ for(let i=0; i<l_courses.length; i++){
     latest_course_wrapper.innerHTML += course;
 }
 
+var ownCoursesList = [];
+const localCourses = localStorage.getItem("ownCourses");
+if(localCourses) {
+    ownCoursesList = JSON.parse(localCourses);
+}
+
+
+for(let i=0; i<ownCoursesList.length; i++){
+    const course = `
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div id="learnLecture" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+                <div class="card-img mb-2" 
+                    style="background: url(${courses[ownCoursesList[i]].image});
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;"></div>
+                <div class="w-100 card-content d-flex align-items-center justify-content-between">
+                    <div class="content d-flex flex-column align-items-start justify-content-center">
+                        <h5>${courses[ownCoursesList[i]].name}</h5>
+                        <span>${courses[ownCoursesList[i]].short_desc}</span>
+                    </div>
+                <div class="price">
+                    <span>$${courses[ownCoursesList[i]].price}</span>
+                </div>
+            </div>
+
+            <!-- badge  -->
+            <div class="latest-badge">Latest</div>
+        </div>
+        <button class="btn btn-primary mt-2" onclick="learnCourse(${courses[ownCoursesList[i]].id})" >Learn</button>
+    </div>
+    `;
+    document.querySelector(".own-courses").innerHTML += course;
+}
+
+function learnCourse(id) {
+    localStorage.setItem("current_course_id",id-1);
+    window.location = "lecture.html";
+}
+                
+
 // navbar link
 nav_links.forEach(e => {
     e.addEventListener("click", () => {

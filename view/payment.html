@@ -16,9 +16,13 @@
         <div class="main">
             
             <i class="fa-regular fa-credit-card d-none d-md-inline "></i>
-            <h4 class="d-none d-md-inline">$89.00</h4>
+            <h4 class="d-none d-md-inline course-price">
+                <!-- course price goes here  -->
+            </h4>
             <div class="line d-none d-md-inline"></div>    
-            <div class="text d-none d-md-inline">Complete Java Full Course</div>
+            <div class="text d-none d-md-inline course-name">
+                <!-- course name goes here  -->
+            </div>
             <img class="img d-none d-md-inline" src="../assets/images/logo/1.png" alt="">
             <div class="item-box">
 
@@ -59,8 +63,16 @@
                     <button id="rem" class="d-inline d-md-none">Get OPT</button>
                     <button id="rem222" class="d-none d-md-inline">Get OPT</button>
                 </div>
-                <a href="./lecture.html" class="btn">Pay Now</a>
-                <span class="total d-block d-md-none">Total : $<small>89.0</small></span>
+                <!-- pay now btn  -->
+                <div class="btn-wrapper2" id="btn-wrapper2">
+                    <button id="btn-pay-now" class="btn pay-now-btn">Pay Now</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-evenly d-md-none ">
+
+                    <span class="title"></span>
+                    <span class="total ">Total : $<small class="price">89.0</small></span>
+
+                </div>
             </div>
         </div>
     </div>
@@ -87,8 +99,84 @@
                }
             })
         })
+
+        const courseName = document.querySelector(".course-name");
+
+        // course id 
+        let course_id = [
+            {
+                id: 1,
+                name: 'Core Java',
+                price: 89
+            },
+            {
+                id: 2,
+                name: 'Python Beginner',
+                price: 'Free'
+            },
+            {
+                id: 3,
+                name: 'JavaScript Course',
+                price: 69
+            },
+            {
+                id: 4,
+                name: 'PHP Tutorial',
+                price: 89
+            },
+            {
+                id: 5,
+                name: 'Web Development',
+                price: 199
+            },
+        ]
+
+        // get the idd from url
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let idd = urlParams.get('id');
+        let id = parseInt(idd);
+        id -= 1
+        console.log('Received ID:', id);
+
+        // rendering the course details
+        courseName.textContent = `${course_id[id].name}`;
+        document.querySelector(".title").textContent = `${course_id[id].name}`;
+        document.querySelector(".price").textContent = `${course_id[id].price}`+ ".0";
+        document.querySelector(".course-price").textContent = "$ " + `${course_id[id].price}` + ".0";
+
+
+        
+
+
     </script>
-        <script src="../assets/js/middleware.js"></script>
+
+    <script>
+        var ownCoursesList = [];
+
+        //get owncouses from localstorage
+        function getCoursesLocal() {
+            const localCourses = localStorage.getItem("ownCourses");
+            if(localCourses) {
+                return ownCoursesList = JSON.parse(localCourses);
+            }
+        }
+
+        document.querySelector("#btn-pay-now").addEventListener("click", () => {
+            localStorage.setItem("current_course_id", JSON.stringify(id));
+            getCoursesLocal();
+            if(ownCoursesList[ownCoursesList.length-1] == id) {
+                alert("wel p tr g lee lh");
+            }else {
+                ownCoursesList.push(id);
+            }
+            
+            localStorage.setItem("ownCourses",JSON.stringify(ownCoursesList));
+            window.location = "./lecture.html";
+        })
+    </script>
+    <script src="../assets/js/middleware.js"></script>
+
 
     
 </body>

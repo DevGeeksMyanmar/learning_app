@@ -129,6 +129,7 @@
 
     <script src="../assets/js/lecture.js"></script>
     <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- swiper js  -->
     <script>
@@ -137,6 +138,13 @@
             spaceBetween: 10,
             freeMode: true,
         });
+
+        $(document).ready(function(){
+            $('.btn-back').click(function(){
+                // localStorage.setItem('login_status',false);
+                window.location.replace("dashboard.html");
+            })
+        })
     </script>
         <script src="../assets/js/middleware.js"></script>
 
