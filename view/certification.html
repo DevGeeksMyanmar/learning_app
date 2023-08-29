@@ -118,6 +118,37 @@
 
 
     <script>
+
+        // course id 
+        $course_id = [
+            {
+                id: 1,
+                name: 'Core Java',
+                price: 89
+            },
+            {
+                id: 2,
+                name: 'Python Beginner',
+                price: 'Free'
+            },
+            {
+                id: 3,
+                name: 'JavaScript Course',
+                price: 69
+            },
+            {
+                id: 4,
+                name: 'PHP Tutorial',
+                price: 89
+            },
+            {
+                id: 5,
+                name: 'Web Development',
+                price: 199
+            },
+        ]
+        $courseID = localStorage.getItem("current_course_id");
+
         $(document).ready(function () {
             $(".btn-download").click(function(){
                 html2pdf(document.getElementById("certificate"),{
@@ -142,6 +173,8 @@
             if($userName) {
                 $userName = JSON.parse($userName);
                 $('.user-name').text($userName);
+                $courseID = JSON.parse($courseID);
+                $('.class-name').text($course_id[$courseID].name);
             }
 
             // get current date the month names 

@@ -87,7 +87,7 @@ h4{
 .line{
     position: absolute;
     width:30%;
-    left:10px;
+    left:15px;
     top:80px;
     height:5px;
     border-radius:10px;
@@ -99,8 +99,8 @@ h4{
     color: #FFF;
     font-size: 30px;
     width:250px;
-    left:20px;
-    top:140px;
+    left:15px;
+    top:100px;
 }
 
 .item-box{
@@ -244,7 +244,7 @@ input[type="date"]{
     color: var(--cardinal);
 }
 
-.total{
+.total, .title{
     margin-top: 10px;
     display: block;
     text-align: center;
@@ -252,6 +252,18 @@ input[type="date"]{
     font-weight: var(--fw-bold);
     color: var(--humpback);
     left: 100px;
+}
+
+.fa-credit-card{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.course-price{
+    position: absolute;
+    top: 20px;
+    right: 10px;
 }
 
 #rem{
