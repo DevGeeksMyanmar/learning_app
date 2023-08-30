@@ -166,16 +166,33 @@
             localStorage.setItem("current_course_id", JSON.stringify(id));
             getCoursesLocal();
             if(ownCoursesList[ownCoursesList.length-1] == id) {
-                alert("wel p tr g lee lh");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Already purchased!',
+                    text: 'You have already bought this course.',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location = "./lecture.html";
+                }
+                })
             }else {
-                ownCoursesList.push(id);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Course purchased!',
+                    text: 'Your payment progress success.',
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    ownCoursesList.push(id);
+                    localStorage.setItem("ownCourses",JSON.stringify(ownCoursesList));
+                    window.location = "./lecture.html";
+                }
+                })
             }
-            
-            localStorage.setItem("ownCourses",JSON.stringify(ownCoursesList));
-            window.location = "./lecture.html";
         })
     </script>
     <script src="../assets/js/middleware.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
     
