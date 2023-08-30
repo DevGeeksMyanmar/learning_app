@@ -176,8 +176,6 @@ for(let i=0; i<ownCoursesList.length; i++){
                 </div>
             </div>
 
-            <!-- badge  -->
-            <div class="latest-badge">Latest</div>
         </div>
         <button class="btn btn-primary mt-2" onclick="learnCourse(${courses[ownCoursesList[i]].id})" >Learn</button>
     </div>

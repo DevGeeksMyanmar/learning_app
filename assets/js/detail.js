@@ -311,7 +311,7 @@ course_detail_container.innerHTML = `
                         <div class="row mb-2 course-modules-wrapper2">
                             <div class="col-4 d-flex align-items-center justify-content-center flex-column">
                                 <div class="insturct-img mb-3"></div>
-                                <h5>Instructor</h5>
+                                <h5>Sayr. Pyae</h5>
                             </div>
                         </div>
                         
