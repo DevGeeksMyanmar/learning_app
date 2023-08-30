@@ -24,7 +24,7 @@
 
 # Dev Geeks Learning Web Application
 
-![Snap Shot](./assets/pic/homepage_snap.jpg)
+![Snap Shot](./assets/pic/home_snap.bmp)
 
 Deployment - [Demo](https://devgeeksmyanmar.github.io/learning_app/#)
 
