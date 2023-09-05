@@ -160,7 +160,7 @@ if(localCourses) {
 for(let i=0; i<ownCoursesList.length; i++){
     const course = `
     <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <div id="learnLecture" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+            <div id="learnLecture" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-center p-2">
                 <div class="card-img mb-2" 
                     style="background: url(${courses[ownCoursesList[i]].image});
                     background-position: center;

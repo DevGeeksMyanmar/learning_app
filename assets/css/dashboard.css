@@ -148,6 +148,7 @@
     height: 100vh;
     background-color: var(--polar);
     overflow-y: scroll;
+    overflow-x: hidden !important;
 }
 
 /* width */
@@ -531,5 +532,14 @@
     }
     .recent-section, .profile-section{
         height: 90vh;
+    }
+    .p-card{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 399px){
+    .p-card{
+        margin-left: 6px;
     }
 }
