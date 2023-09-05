@@ -14,8 +14,8 @@
         ScrollReveal().reveal('.title-1,.title-2,.title-3,.learn-desc,.btn-learn-now,.contact-left,.about-us-title,.goals h4,.collab-title',{ delay : 500 , origin : 'left',interval : 200});
         ScrollReveal().reveal('.img-learn-2,.session-popular .title,.about-us-text,.goals p',{delay : 700 , origin : 'bottom',distance : '50px'});
         ScrollReveal().reveal('.goals img,.wedo',{delay : 500 , origin : 'bottom',distance : '70px',interval:200});
-        ScrollReveal().reveal('.navbar-brand ,.session-title,.img-certificate',{delay : 700 , origin : 'left'});
         ScrollReveal().reveal('.site-div,.team img,.copyright-text-1,.copyright-text-2',{delay : 500 ,distance:'40px', origin : 'bottom',interval:200})
+        ScrollReveal().reveal('.navbar-brand ,.session-title,.img-certificate,.copyright-text-1,.copyright-text-2',{delay : 700 , origin : 'left'});
 
         ScrollReveal().reveal('.session-info .bg-secondary,',{delay : 800 , origin : 'bottom',distance:'50px'});
         ScrollReveal().reveal('.category-box',{delay : 600 , origin:'bottom',interval:100,});
