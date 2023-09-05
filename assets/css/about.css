@@ -230,7 +230,7 @@ nav ul li a.nav-active::after {
 }
 
 .about-container {
-    height: 800px;
+    height: 90vh;
 }
 
 /* for mobile responsive  */
