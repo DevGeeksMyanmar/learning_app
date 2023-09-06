@@ -122,33 +122,102 @@ upload_pp_course(courses);
 
 // searching function
 const search = document.querySelector(".searchbar");
+let term;
+search.onkeyup = () => {
+    term = search.value;
+    if(term != ""){
+        search.classList.add("onkeyup");
+    }else{
+        search.classList.remove("onkeyup");
+    }
+}
 
-for(let i=0; i<l_courses.length; i++){
-    const course = `
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-            <a href="./detail.html?idd=${l_courses[i].id}" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+
+// run it after 500ms 
+setInterval(() => {
+    if(!search.classList.contains("onkeyup")){
+        for_default(l_courses);
+        // console.log("not contain");
+    }else{
+        for_search(term);
+        // console.log("contain");
+    }
+}, 500);
+
+
+
+// latest courses (for default)
+const for_default = (item) => {
+        const courses = item.map(e => {
+            return `
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <a href="./detail.html?idd=${e.id}" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
                 <div class="card-img mb-2" 
-                    style="background: url(${l_courses[i].image});
+                    style="background: url(${e.image});
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;"></div>
                 <div class="w-100 card-content d-flex align-items-center justify-content-between">
                     <div class="content d-flex flex-column align-items-start justify-content-center">
-                        <h5>${l_courses[i].name}</h5>
-                        <span>${l_courses[i].short_desc}</span>
+                        <h5>${e.name}</h5>
+                        <span>${e.short_desc}</span>
                     </div>
                 <div class="price">
-                    <span>$${l_courses[i].price}</span>
+                    <span>$${e.price}</span>
                 </div>
             </div>
-
-            <!-- badge  -->
-            <div class="latest-badge">Latest</div>
-        </a>
-    </div>
-    `;
-    latest_course_wrapper.innerHTML += course;
+    
+                    <!-- badge  -->
+                    <div class="latest-badge">Latest</div>
+                </a>
+            </div>
+            `
+        })
+        .join(" ");
+        latest_course_wrapper.innerHTML = courses;
 }
+
+// for search
+const for_search = (item) => {
+    const index = l_courses.find(course => course.name.toLowerCase() === item.toLowerCase());
+    if(index){
+
+        document.querySelector(".popular-course").classList.add("d-none");
+        document.querySelector(".latest-course .title h4").textContent = "We Found!";
+        document.querySelector(".latest-course .title span").classList.add("d-none");
+
+        console.log("we found at index " + index.id);
+        latest_course_wrapper.innerHTML = `
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <a href="./detail.html?idd=${l_courses[index.id - 1].id}" class="p-card latest_course_card position-relative swiper-slide d-flex flex-column align-items-center justify-content-start p-2">
+                <div class="card-img mb-2" 
+                    style="background: url(${l_courses[index.id -1 ].image});
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;"></div>
+                <div class="w-100 card-content d-flex align-items-center justify-content-between">
+                    <div class="content d-flex flex-column align-items-start justify-content-center">
+                        <h5>${l_courses[index.id - 1].name}</h5>
+                        <span>${l_courses[index.id - 1].short_desc}</span>
+                    </div>
+                <div class="price">
+                    <span>$${l_courses[index.id - 1].price}</span>
+                </div>
+            </div>
+    
+                    <!-- badge  -->
+                    <div class="latest-badge">Latest</div>
+                </a>
+            </div>
+        
+        `;
+    }else{
+        document.querySelector(".latest-course .title h4").textContent = "Latest Courses!";
+        document.querySelector(".latest-course .title span").classList.remove("d-none");
+        document.querySelector(".popular-course").classList.remove("d-none");
+    }
+}
+
 
 var ownCoursesList = [];
 const localCourses = localStorage.getItem("ownCourses");
