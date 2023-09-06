@@ -371,7 +371,7 @@
     font-size: var(--fs-12);
     font-weight: var(--fw-bold);
     border: 1px solid var(--swan);
-    box-shadow: var(--);
+    /* box-shadow: var(); */
 }
 
 /* this is swiper section  */
