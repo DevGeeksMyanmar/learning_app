@@ -151,6 +151,34 @@
     cursor: pointer;
 }
 
+.backbtn{
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(--wolf);
+    background:#f7f7f7;
+    color: var(--polar);
+    font-size: var(--fs-20);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+
+.backbtn:hover{
+    background: var(--swan);
+}
+
+.backbtn .fa-chevron-left{
+    color : #2b70c9;
+}
+
 @media screen and (max-width: 768px){
     #review{
         height: 90vh;
