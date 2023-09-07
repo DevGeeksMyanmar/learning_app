@@ -310,6 +310,7 @@ input[type="date"]{
     left: 310px;
     top: 300px;
     border: none;
+    border-radius: 8px;
     font-size: var(--fs-14);
     font-weight: var(--fw-semibold);
     color: var(--polar);
